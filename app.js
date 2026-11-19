@@ -108,7 +108,6 @@
   function refreshChoice(button) {
     const selected = activeProfile()?.choices?.[button.dataset.choice] === Number(button.dataset.option);
     button.setAttribute('aria-pressed', String(selected));
-    button.textContent = selected ? t('✓ Выбрано', '✓ Selected') : t('Выбрать', 'Select');
     button.closest('.choice').classList.toggle('picked', selected);
   }
 
@@ -121,7 +120,7 @@
       return `<div class="choice ${block.ideal ? 'ideal' : ''} ${block.kind !== 'option' ? 'route-dialogue' : ''} ${picked ? 'picked' : ''}">
         ${block.ideal ? `<span class="recommend" role="img" aria-label="${t('Рекомендуемый вариант', 'Recommended choice')}">◆</span>` : ''}${text}
         ${block.notes.map(note => `<p class="choice-note">${linkReferences(message(note))}</p>`).join('')}
-        ${selectable ? `<button type="button" class="choice-pick" data-choice="${entry.id}" data-option="${index}" aria-pressed="${picked}" aria-label="${t('Выбор', 'Choice')}: ${esc(message(block.text))}">${picked ? t('✓ Выбрано', '✓ Selected') : t('Выбрать', 'Select')}</button>` : ''}
+        ${selectable ? `<button type="button" class="choice-pick" data-choice="${entry.id}" data-option="${index}" aria-pressed="${picked}" aria-label="${t('Выбор', 'Choice')}: ${esc(message(block.text))}"></button>` : ''}
       </div>`;
     }).join('');
   }

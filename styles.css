@@ -71,9 +71,7 @@ details[open] > summary::before, .character-filter[open] > summary::after { tran
   .route-chapter > summary::before, .route-section > summary::before { transition: none; }
 }
 
-.choice-pick { display: block; margin-top: 8px; min-height: 40px; background: transparent; font-size: .85rem; }
 .choice.picked { outline: 2px solid #c8a5ff; outline-offset: 1px; }
-.choice-pick[aria-pressed="true"] { color: #eedfff; border-color: #c8a5ff; background: #553781; }
 .scores-button { position: fixed; z-index: 8; right: max(12px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); min-height: 44px; background: #19233a; border-color: #8870be; box-shadow: 0 4px 18px #0009; }
 .scores-button span:first-child { color: #d9b7ff; font-size: 1.1em; margin-right: 4px; }
 .scores-dialog { color: var(--ink); width: min(420px, calc(100% - 24px)); max-height: 85dvh; overflow: auto; }
@@ -83,3 +81,10 @@ details[open] > summary::before, .character-filter[open] > summary::after { tran
 .score-row { border-bottom: 1px solid var(--edge); padding: 7px 0; }
 .score-row dt { color: var(--c); }
 .score-row dd { font-variant-numeric: tabular-nums; margin: 0; }
+
+.choice:has(.choice-pick) { position: relative; }
+.choice-pick { position: absolute; inset: 0; width: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; }
+.choice-pick:hover { background: #c8a5ff0c; }
+.choice:has(.choice-pick) .route-ref { position: relative; z-index: 1; }
+.choice.picked { outline-width: 1px; background-color: #271d42; box-shadow: inset 0 0 0 1px #c8a5ff60; }
+.choice.ideal.picked { box-shadow: inset 3px 0 #42ffcf, inset 0 0 0 1px #c8a5ff60; }
