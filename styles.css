@@ -65,11 +65,21 @@ details[open] > summary::before, .character-filter[open] > summary::after { tran
 .language-select { font: inherit; font-size: .875rem; color: var(--ink); background: #19233a; border: 1px solid var(--edge); border-radius: 10px; padding: 9px 8px; }
 .language-select:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 .dialog-language { display: flex; justify-content: end; margin-bottom: 8px; }
-.auto-toggle { position: fixed; z-index: 8; right: max(8px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 5px; min-height: 44px; padding: 7px; cursor: pointer; color: #abb9d1; background: #141a30; border: 1px solid #4b5075; border-radius: 12px; box-shadow: 0 4px 18px #0009; }
-.auto-toggle input { width: 15px; height: 15px; margin: 0; accent-color: var(--cyan); cursor: pointer; }
-.auto-toggle:has(input:checked) { color: var(--cyan); border-color: var(--cyan); }
 .route-chapter, .route-section { overflow-anchor: none; }
 .route-chapter > summary::before, .route-section > summary::before { transition: transform 210ms ease; }
 @media (prefers-reduced-motion: reduce) {
   .route-chapter > summary::before, .route-section > summary::before { transition: none; }
 }
+
+.choice-pick { display: block; margin-top: 8px; min-height: 40px; background: transparent; font-size: .85rem; }
+.choice.picked { outline: 2px solid #c8a5ff; outline-offset: 1px; }
+.choice-pick[aria-pressed="true"] { color: #eedfff; border-color: #c8a5ff; background: #553781; }
+.scores-button { position: fixed; z-index: 8; right: max(12px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); min-height: 44px; background: #19233a; border-color: #8870be; box-shadow: 0 4px 18px #0009; }
+.scores-button span:first-child { color: #d9b7ff; font-size: 1.1em; margin-right: 4px; }
+.scores-dialog { color: var(--ink); width: min(420px, calc(100% - 24px)); max-height: 85dvh; overflow: auto; }
+.scores-dialog::backdrop { background: #02020ecf; }
+.scores-header, .score-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.scores-header h2 { margin: 0; }
+.score-row { border-bottom: 1px solid var(--edge); padding: 7px 0; }
+.score-row dt { color: var(--c); }
+.score-row dd { font-variant-numeric: tabular-nums; margin: 0; }

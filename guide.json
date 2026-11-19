@@ -121,7 +121,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -165,7 +171,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "Keep her waiting",
@@ -204,7 +216,17 @@
             "Пенни +1 · Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ],
+            [
+              "dalia",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -278,7 +300,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -304,7 +332,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "text": "About nothing",
@@ -330,7 +364,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "Be agressive with the guy",
@@ -338,7 +378,13 @@
             "Энни +2"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              2
+            ]
+          ]
         },
         {
           "text": "Ignore it and go to school",
@@ -364,7 +410,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t go",
@@ -390,7 +442,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "No",
@@ -418,7 +476,14 @@
             "Nancy +1 later (1.8.2)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1,
+              "1.8.2"
+            ]
+          ]
         },
         {
           "text": "Clean it quickly so you can leave",
@@ -500,7 +565,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -529,7 +600,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t interfere",
@@ -908,7 +985,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Give her space",
@@ -952,7 +1035,14 @@
             "Penny +1 later (1.14.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1,
+              "1.14.1"
+            ]
+          ]
         },
         {
           "text": "Don’t give it a like",
@@ -1023,7 +1113,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -1142,7 +1238,14 @@
             "Annie +1 later (1.13.1). Even more later, this will save your life in Eternum (4.16.3)."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1,
+              "1.13.1"
+            ]
+          ]
         },
         {
           "kind": "note",
@@ -1267,7 +1370,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "Stay out of it",
@@ -1381,7 +1490,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Attack too early, too late, or not at all",
@@ -1413,7 +1528,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -1477,7 +1598,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t let her come with you",
@@ -1505,7 +1632,14 @@
             "Alex +1 later (2.9.2)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1,
+              "2.9.2"
+            ]
+          ]
         },
         {
           "text": "Try to calm him down",
@@ -1537,7 +1671,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Hey, what’s that tattoo?",
@@ -1626,7 +1766,13 @@
             "Луна +2"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              2
+            ]
+          ]
         },
         {
           "text": "Ask Luna to go",
@@ -1829,7 +1975,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -1865,7 +2017,17 @@
             "Нэнси +1 · Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ],
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Go wake up Dalia",
@@ -1947,7 +2109,13 @@
             "Чанг и Микаэла +1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "chang",
+              1
+            ]
+          ]
         },
         {
           "text": "A dumbbell",
@@ -1955,7 +2123,13 @@
             "Чанг и Микаэла +1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "chang",
+              1
+            ]
+          ]
         },
         {
           "text": "A ticket to a show",
@@ -1963,7 +2137,13 @@
             "Чанг и Микаэла +2"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "chang",
+              2
+            ]
+          ]
         },
         {
           "text": "Nothing",
@@ -2016,7 +2196,13 @@
             "Этерналы -50 · Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "Forget it",
@@ -2073,7 +2259,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Just compliment her",
@@ -2123,7 +2315,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         },
         {
           "text": "(Ask less questions)",
@@ -2175,7 +2373,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t hug her back",
@@ -2262,7 +2466,13 @@
             "Нова · образ 2 Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Send her a message",
@@ -2344,7 +2554,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -2370,7 +2586,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "text": "Take the photo with zoom out",
@@ -2404,7 +2626,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -2460,7 +2688,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t waste any time",
@@ -2504,7 +2738,17 @@
             "Алекс +1 · Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ],
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Ask Nova to open the box",
@@ -2547,7 +2791,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -2737,7 +2987,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Alex’s bagels",
@@ -2745,7 +3001,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -2791,7 +3053,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -2817,7 +3085,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -2904,7 +3178,13 @@
             "View a scene from the past, where you, Dalia, and Penny were still kids."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "kind": "note",
@@ -2986,7 +3266,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -3373,7 +3659,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "No",
@@ -3420,7 +3712,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Fight Club",
@@ -3511,7 +3809,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -3537,7 +3841,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Focus on the mission",
@@ -3594,7 +3904,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "text": "Sit on the other sofa",
@@ -3674,7 +3990,13 @@
             "Этерналы -5 · Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         },
         {
           "text": "Giver her a big tip",
@@ -3725,7 +4047,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "Correct her",
@@ -3759,7 +4087,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -3779,7 +4113,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Say nothing",
@@ -3831,7 +4171,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Stand still",
@@ -4062,25 +4408,25 @@
         {
           "text": "Yeah, I know you’re all counting on me. No worries, I got this",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Of course. How could I forget about our first date, babe?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Got it. I’ll text you tomorrow. Cya Alex",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Got it. I’ll text you tomorrow. Cya Alexandra",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4116,13 +4462,13 @@
         {
           "text": "Ha. ha. ha. Very funny, Dalia...",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Funny you should mention that...",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4140,13 +4486,13 @@
         {
           "text": "Maybe I’m not the one with a bad sense of humor.",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "See you later!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4158,13 +4504,13 @@
         {
           "text": "Now I see where you got your style from",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Maybe you should go back to the braids",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         }
       ]
@@ -4194,13 +4540,13 @@
         {
           "text": "What’s up? How can I help my favorite client?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Don’t have time right now, Penny",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4212,7 +4558,7 @@
         {
           "text": "All photos are great when the girl in them is so stunning",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4230,13 +4576,13 @@
         {
           "text": "Option A",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Option B",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         }
       ]
@@ -4266,13 +4612,13 @@
         {
           "text": "That doesn’t seem very urgent... I’ve got things to do, I’ll see you later",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "That’s... kind of an oddly specific question to ask",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4284,19 +4630,19 @@
         {
           "text": "You sealed your fate the moment you put your filthy hands on her, demon. Go to hell... again.",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "The only fate of the weak is to be crushed by the strong. Know your place, demon.",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Nothing personal, demon. Just taking out the trash.",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4308,13 +4654,13 @@
         {
           "text": "Haha okay, okay, get back to your... thing",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "You’re the one who texted me!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         }
       ]
@@ -4344,13 +4690,13 @@
         {
           "text": "Thanks! But I prefer not to, it seems like a family thing",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Really? I’d love to!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4368,13 +4714,13 @@
         {
           "text": "EXTRA SPICY!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Not very spicy",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4386,13 +4732,13 @@
         {
           "text": "Haha no worries, your dad’s just as awesome as you",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Your father is a bit... out there",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4428,13 +4774,13 @@
         {
           "text": "I think you’d look better without it",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Looks great!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4452,13 +4798,13 @@
         {
           "text": "That sounds awesome!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Meh, I’m not a fan of the beach",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         }
       ]
@@ -4482,13 +4828,13 @@
         {
           "text": "What do you need?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Sorry bro, I don’t have the time rn",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4500,7 +4846,7 @@
         {
           "text": "Bro they’re identical",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4512,7 +4858,7 @@
         {
           "text": "Those are the same exact photos!!!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4524,19 +4870,19 @@
         {
           "text": "They’re the same fucking color.",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "The first one",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "The second one",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -4603,7 +4949,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "Let’s get this shit done!",
@@ -4635,7 +4987,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "Hot Tub Time Machine 2",
@@ -5107,7 +5465,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -5134,7 +5498,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "Mr. Mos (center)",
@@ -5382,7 +5752,13 @@
             "Нова -1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "nova",
+              -1
+            ]
+          ]
         },
         {
           "text": "Don’t look",
@@ -5410,7 +5786,13 @@
             "Чанг и Микаэла +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "chang",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t give him any task",
@@ -5495,7 +5877,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -5564,7 +5952,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "No opinion",
@@ -5651,7 +6045,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Caress her body",
@@ -5688,7 +6088,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Correct him",
@@ -5742,7 +6148,13 @@
             "Annie +1 and she’ll send you a picture back later (5.9.4)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -5786,7 +6198,14 @@
             "Luna +1 later (5.8.2)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1,
+              "5.8.2"
+            ]
+          ]
         },
         {
           "text": "Back off",
@@ -5818,7 +6237,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -6067,13 +6492,13 @@
         {
           "text": "Sounds awesome! Have fun",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Cool",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -6085,19 +6510,19 @@
         {
           "text": "Anything with fights and lots of action!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "A fishing simulator!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Something kinky!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         }
       ]
@@ -6127,13 +6552,13 @@
         {
           "text": "I won’t move an inch!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Ok, but hurry up",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         }
       ]
@@ -6164,13 +6589,13 @@
         {
           "text": "Yes! I took this photo this morning at Luna’s",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "It’s ok, no worries It was just me being silly",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -6188,13 +6613,13 @@
         {
           "text": "Right? I thought so too. Glad you like it",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Haha, if you say so. That was all lol, gotta go now",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -6230,13 +6655,13 @@
         {
           "text": "Is that from now? Where are you?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Wow! I love it",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -6254,25 +6679,25 @@
         {
           "text": "Oh, that’s nice! I’ve gotta go now, but I’ll see you and that new mane of yours later!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "You have a spectacular body too! I wish I could have seen more of it in that photo...",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Oh, that’s nice! I’ve gotta go now, but I’ll see you and that new mane of yours later!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Can’t wait to see that! Now I just wish you’d taken that photo vertically...",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -6284,13 +6709,13 @@
         {
           "text": "OMG",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Oh, nice! Chang’s gonna love this!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -6347,7 +6772,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -6418,13 +6849,13 @@
         {
           "text": "We’re on our way! Can’t wait to see u",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Ok",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -6545,7 +6976,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "kind": "note",
@@ -6583,7 +7020,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -6694,7 +7137,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -6766,7 +7215,13 @@
             "Пенни -1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "penny",
+              -1
+            ]
+          ]
         },
         {
           "text": "Charlotte",
@@ -6881,7 +7336,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "Focus on the mission",
@@ -7006,7 +7467,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -7095,7 +7562,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "Although a bit cold. Wasn’t there somewhere warmer?",
@@ -7109,7 +7582,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -7135,7 +7614,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -7171,7 +7656,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Magic",
@@ -7179,7 +7670,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -7205,7 +7702,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "Thank her",
@@ -7307,7 +7810,17 @@
             "Энни +1 · Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ],
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "I prefer tall girls",
@@ -7387,7 +7900,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "Be rude to Clonk",
@@ -7811,7 +8330,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t pat her head",
@@ -8175,7 +8700,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "I prefer not to talk about it",
@@ -8316,13 +8847,13 @@
         {
           "text": "Oh shit, really? I can come anyway and look after you",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "And what about the Wild West server? And the Gem??",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -8376,7 +8907,13 @@
             "Этерналы -25 · Чанг и Микаэла +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "chang",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t lend him money",
@@ -8412,19 +8949,19 @@
         {
           "text": "Haha come on, stop fooling around",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "She looks so pretty",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "You both look stunning",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -8664,7 +9201,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "Leave",
@@ -8776,7 +9319,13 @@
             "Алекс +2"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              2
+            ]
+          ]
         },
         {
           "text": "Take the money and let him go",
@@ -9033,7 +9582,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -9152,7 +9707,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -9200,13 +9761,13 @@
         {
           "text": "Oh boy... Can I get a sneak peek... ?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Nice! I bet we’ll take some great shots",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -9224,13 +9785,13 @@
         {
           "text": "True! I better be on my way. See you later Penny ∧∧",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Ah, true! Can’t wait to play with you",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         }
       ]
@@ -9334,7 +9895,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t grab her hand",
@@ -9454,7 +10021,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "I thought you’d need the help",
@@ -9633,7 +10206,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "text": "Went to Regina’s room",
@@ -9695,7 +10274,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -9972,13 +10557,13 @@
         {
           "text": "Without wishing you a good night? No chance",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "I’m trying",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -10014,7 +10599,13 @@
             "Чанг и Микаэла +1 and Chang +1 later (8.8.2)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "chang",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t ask her on a date yet",
@@ -10087,7 +10678,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "text": "Bribe her",
@@ -10271,13 +10868,13 @@
         {
           "text": "I wonder why... did something happen yesterday?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Cool! Have a good training!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -10295,19 +10892,19 @@
         {
           "text": "Yeah... sorry about that, Penny",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Wow, you got a good angle of Dalia there",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Hahah good luck with that!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -10319,19 +10916,19 @@
         {
           "text": "Ah yes, I’ve heard the modeling world can be very hard",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Maybe it’s better if we talk about this face to face",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Not for a moment",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -10374,13 +10971,13 @@
         {
           "text": "Wow, you got a good angle of Dalia there",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Hahah good luck with that!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -10392,19 +10989,19 @@
         {
           "text": "Wow, you got a good angle of Dalia there/again",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "That’s better Thank you! See you all tonight",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Wow, you look beautiful",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -10649,7 +11246,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "Go to the Exit Portal",
@@ -10822,7 +11425,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Swim with her",
@@ -10989,7 +11598,13 @@
             "Нова +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nova",
+              1
+            ]
+          ]
         },
         {
           "text": "Books",
@@ -10997,7 +11612,13 @@
             "Нэнси +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "Porn magazines",
@@ -11298,13 +11919,13 @@
         {
           "text": "What happened???",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Hmm? You forgot about our dinner?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -11316,13 +11937,13 @@
         {
           "text": "Ah np, but try to hurry. Think the kitchen closes at 9:30",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "No worries!!! There’s no rush",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -11358,13 +11979,13 @@
         {
           "text": "Bro, that’s my joke Tell one of yours",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Lmao sure bro, all yours",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -11401,13 +12022,13 @@
         {
           "text": "Sorry I can’t I’ll try to get them to you on Monday!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "I’ll be there",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -11443,13 +12064,13 @@
         {
           "text": "Oh no! Can I see?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Oh no! Do you have after-sun?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -11461,31 +12082,31 @@
         {
           "text": "I can go sunbathing with you",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Let me see how serious it is",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Oh DAMN Is the front also that bad?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Lol you had that pic ready to send, didn’t you??",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Wow you sure got tanned!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -11587,7 +12208,13 @@
             "Энни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "annie",
+              1
+            ]
+          ]
         },
         {
           "text": "To play mini golf",
@@ -11638,7 +12265,13 @@
             "Энни -1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "annie",
+              -1
+            ]
+          ]
         },
         {
           "text": "Your personality",
@@ -11658,7 +12291,13 @@
             "Энни -1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "annie",
+              -1
+            ]
+          ]
         }
       ]
     },
@@ -11855,7 +12494,13 @@
             "Алекс +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         },
         {
           "text": "Panic",
@@ -11884,13 +12529,13 @@
         {
           "text": "Yes, yes, I’m going, don’t be so impatient",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "SORRY! I’M ON MY WAY!!!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -12246,7 +12891,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "kind": "note",
@@ -12770,7 +13421,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "I owe it to her",
@@ -12857,7 +13514,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t hug her",
@@ -12933,7 +13596,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "Fail a QTE",
@@ -13059,7 +13728,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "Ignore her",
@@ -13159,7 +13834,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "A horse",
@@ -13213,7 +13894,13 @@
             "+1, but the following minigame will be more difficult"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -13240,7 +13927,13 @@
             "Also, one of the suitors, Torion, will come speak to you after the competition to commend your skill. He’ll promise that the House of Redveil will stand with Calypso in case of a civil war, which might influence the story in later chapters."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         },
         {
           "text": "The marker is in the red area",
@@ -13373,7 +14066,13 @@
             "Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "calypso",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -13573,13 +14272,13 @@
         {
           "text": "Doesn’t it snow almost every year?",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Whoa! So niceee",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -13597,25 +14296,25 @@
         {
           "text": "The power of love boosted the signal, obviously",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "Yeahh but I walked off a bit to grab wood for the fire",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "It looks a bit blurry lol",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
           "text": "I LOVE IT!",
           "notes": [],
-          "kind": "dialogue",
+          "kind": "reply",
           "ideal": false
         },
         {
@@ -13685,7 +14384,13 @@
             "Пенни +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -14088,7 +14793,13 @@
             "Далия +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         }
       ]
     },
@@ -14288,7 +14999,13 @@
             "skin, but Далия -1. So maybe you should hold back this time."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "affection": [
+            [
+              "dalia",
+              -1
+            ]
+          ]
         },
         {
           "text": "Kiss or Miss",
@@ -14782,7 +15499,13 @@
             "Луна +1 and extra scenes & more affection point opportunities later!"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Keep them on",
@@ -14815,7 +15538,13 @@
             "Этерналы -12 · Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Pass",
@@ -14859,7 +15588,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t do it",
@@ -14919,7 +15654,13 @@
             "Луна +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Don’t push it",

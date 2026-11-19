@@ -25,6 +25,9 @@
   const name = id => t(db.characters[id][0], translations.characters[id]);
   const activeProfile = () => state.profiles.find(profile => profile.id === state.active);
   const entries = db.entries.filter(entry => entry.kind !== 'section');
+  const entryMap = new Map(entries.map(entry => [entry.id, entry]));
+  const isOption = block => block?.kind === 'option' || block?.kind === 'reply';
+  const isPassed = (entry, profile) => !!profile?.done?.[entry.id] || isOption(entry.blocks[profile?.choices?.[entry.id]]);
   const displayedIds = new Set(db.entries.map(entry => entry.id));
   const chapters = db.chapters.map((title, index) => ({
     title,
@@ -61,7 +64,7 @@
     if (!open) return;
     $('profileList').innerHTML = state.profiles.map(profile => `
       <div class="profileRow">
-        <span>${esc(profile.name)} <span class="muted">· ${Object.values(profile.done || {}).filter(Boolean).length} ${t('отмечено', 'marked')}</span></span>
+        <span>${esc(profile.name)} <span class="muted">· ${entries.filter(entry => isPassed(entry, profile)).length} ${t('отмечено', 'marked')}</span></span>
         <button data-switch="${esc(profile.id)}">${profile.id === state.active ? t('Текущий', 'Current') : t('Войти', 'Switch')}</button>
       </div>`).join('');
   }
@@ -70,8 +73,7 @@
     const profile = activeProfile();
     $('profileName').textContent = profile?.name || t('Выбрать профиль', 'Choose a profile');
     $('avatar').textContent = (profile?.name || '?').charAt(0).toUpperCase();
-    const done = profile?.done || {};
-    const passed = entries.filter(entry => done[entry.id]).length;
+    const passed = entries.filter(entry => isPassed(entry, profile)).length;
     const percent = passed / entries.length * 100;
     $('counter').textContent = `${passed} / ${entries.length} ${t('пройдено', 'completed')}`;
     $('percent').textContent = `${Math.round(percent)}%`;
@@ -83,7 +85,9 @@
     save();
     profileModal(false);
     updateProfile();
-    scheduleAuto();
+    for (const button of $('results').querySelectorAll('[data-choice]')) {
+      refreshChoice(button);
+    }
     for (const button of $('results').querySelectorAll('[data-done]')) {
       updateDoneButton(button, !!activeProfile()?.done?.[button.dataset.done]);
     }
@@ -101,13 +105,23 @@
     );
   }
 
+  function refreshChoice(button) {
+    const selected = activeProfile()?.choices?.[button.dataset.choice] === Number(button.dataset.option);
+    button.setAttribute('aria-pressed', String(selected));
+    button.textContent = selected ? t('✓ Выбрано', '✓ Selected') : t('Выбрать', 'Select');
+    button.closest('.choice').classList.toggle('picked', selected);
+  }
+
   function makeBlocks(entry) {
-    return entry.blocks.map(block => {
+    return entry.blocks.map((block, index) => {
       const text = linkReferences(message(block.text)).replaceAll('\n', '<br>');
       if (block.kind === 'note') return `<div class="route-note">${text}</div>`;
-      return `<div class="choice ${block.ideal ? 'ideal' : ''} ${block.kind === 'dialogue' ? 'route-dialogue' : ''}">
-        ${block.ideal ? `<span class="recommend">◆ ${t('ИДЕАЛ', 'IDEAL')}</span>` : ''}${text}
+      const selectable = entry.kind !== 'section' && isOption(block);
+      const picked = selectable && activeProfile()?.choices?.[entry.id] === index;
+      return `<div class="choice ${block.ideal ? 'ideal' : ''} ${block.kind !== 'option' ? 'route-dialogue' : ''} ${picked ? 'picked' : ''}">
+        ${block.ideal ? `<span class="recommend" role="img" aria-label="${t('Рекомендуемый вариант', 'Recommended choice')}">◆</span>` : ''}${text}
         ${block.notes.map(note => `<p class="choice-note">${linkReferences(message(note))}</p>`).join('')}
+        ${selectable ? `<button type="button" class="choice-pick" data-choice="${entry.id}" data-option="${index}" aria-pressed="${picked}" aria-label="${t('Выбор', 'Choice')}: ${esc(message(block.text))}">${picked ? t('✓ Выбрано', '✓ Selected') : t('Выбрать', 'Select')}</button>` : ''}
       </div>`;
     }).join('');
   }
@@ -121,7 +135,7 @@
       <h4 class="cardTitle">${esc(message(entry.title || entry.id))}</h4>
       ${entry.characters.length ? `<div class="pills">${entry.characters.map(id => `<span class="pill" style="--c:${color(id)}">${esc(name(id))}</span>`).join('')}</div>` : ''}
       ${makeBlocks(entry)}
-      <div class="cardFooter"><button class="doneBtn ${done ? 'done' : ''}" data-done="${entry.id}" aria-pressed="${done}">${done ? t('✓ Пройдено', '✓ Completed') : t('○ Отметить', '○ Mark done')}</button></div>
+      ${entry.blocks.some(isOption) ? '' : `<div class="cardFooter"><button class="doneBtn ${done ? 'done' : ''}" data-done="${entry.id}" aria-pressed="${done}">${done ? t('✓ Пройдено', '✓ Completed') : t('○ Отметить', '○ Mark done')}</button></div>`}
     </article>`;
   }
 
@@ -183,7 +197,6 @@
     $('filterLabel').textContent = selection.size ? [...selection].map(name).join(', ') : t('Все девушки', 'All girls');
     $('matchCount').textContent = selection.size ? `${t('Показано решений', 'Entries shown')}: ${visible}` : '';
     $('emptyFilter').hidden = chapterNodes.some(chapter => !chapter.node.hidden);
-    scheduleAuto();
   }
 
   function jump(target) {
@@ -192,10 +205,6 @@
       if (node.hidden) return;
       if (node.matches('.route-chapter, .route-section')) setOpen(node, true, false);
     }
-    suspendAuto();
-    currentSectionId = target.closest('.route-section')?.id;
-    clearTimeout(resumeTimer);
-    resumeTimer = setTimeout(scheduleAuto, 580);
     target.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   }
 
@@ -238,9 +247,23 @@
       jump(target);
       return;
     }
-    const button = event.target.closest('[data-done]');
     const profile = activeProfile();
-    if (!button || !profile) return;
+    if (!profile) return;
+    const choice = event.target.closest('[data-choice]');
+    if (choice) {
+      const {choice: id, option} = choice.dataset;
+      const index = Number(option);
+      profile.choices ||= {};
+      if (profile.choices[id] === index) delete profile.choices[id];
+      else profile.choices[id] = index;
+      if (profile.done) delete profile.done[id];
+      save();
+      for (const button of choice.closest('.card').querySelectorAll('[data-choice]')) refreshChoice(button);
+      updateProfile();
+      return;
+    }
+    const button = event.target.closest('[data-done]');
+    if (!button) return;
     profile.done ||= {};
     const id = button.dataset.done;
     profile.done[id] = !profile.done[id];
@@ -252,7 +275,6 @@
   $('profileBtn').onclick = () => profileModal(true);
   $('closeProfiles').onclick = () => {
     profileModal(false);
-    scheduleAuto();
   };
   $('profileList').onclick = event => {
     const button = event.target.closest('[data-switch]');
@@ -286,7 +308,6 @@
     }
     $('newName').placeholder = t('Имя профиля, например MQ804', 'Profile name, e.g. MQ804');
     for (const select of document.querySelectorAll('[data-language]')) select.value = language;
-    updateAutoLabel();
   }
 
   function setLanguage(event) {
@@ -307,34 +328,13 @@
     profileModal(!$('profileOverlay').classList.contains('hide'));
     applyFilter();
     if (anchorId && $(anchorId)) window.scrollBy(0, $(anchorId).getBoundingClientRect().top - offset);
-    scheduleAuto();
   }
   for (const select of document.querySelectorAll('[data-language]')) select.onchange = setLanguage;
 
   const results = $('results');
-  const autoControl = $('autoAccordion');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const animations = new WeakMap();
   const toolbarBottom = () => document.querySelector('.toolbar').getBoundingClientRect().bottom;
-  let autoEnabled = false;
-  let autoFrame = 0;
-  let autoSuspendedUntil = 0;
-  try {
-    autoEnabled = localStorage.getItem('eternum-route-auto') === 'on';
-  } catch {}
-
-  function updateAutoLabel() {
-    const text = autoEnabled
-      ? t('Автораскрытие включено', 'Auto-expand on')
-      : t('Автораскрытие выключено', 'Auto-expand off');
-    autoControl.checked = autoEnabled;
-    autoControl.setAttribute('aria-label', text);
-    autoControl.parentElement.title = text;
-  }
-
-  function suspendAuto() {
-    autoSuspendedUntil = performance.now() + (reducedMotion.matches ? 100 : 550);
-  }
 
   function setOpen(node, open, animate = true) {
     const running = animations.get(node);
@@ -365,117 +365,34 @@
     };
   }
 
-  const preloadDistance = 200;
-  let currentSectionId;
-  let scrollDirection = 1;
-  let lastScrollY = scrollY;
-  let resumeTimer;
-
-  function pin(node, offset) {
-    const adjustment = node.getBoundingClientRect().top - offset;
-    if (Math.abs(adjustment) > 1) window.scrollBy(0, adjustment);
-    lastScrollY = scrollY;
-  }
-
-  function showSection(item) {
-    setOpen(item.chapter, true, false);
-    setOpen(item.node, true, false);
-  }
-
-  function keepSections(visible, anchor, offset) {
-    const sections = new Set(visible.map(item => item.node));
-    const activeChapters = new Set(visible.map(item => item.chapter));
-    for (const chapter of chapterNodes) {
-      for (const section of chapter.sections) {
-        if (!sections.has(section.node)) setOpen(section.node, false, false);
-      }
-      if (!activeChapters.has(chapter.node)) setOpen(chapter.node, false, false);
-    }
-    pin(anchor, offset);
-  }
-
-  function updateAuto() {
-    autoFrame = 0;
-    if (!autoEnabled || performance.now() < autoSuspendedUntil || !$('profileOverlay').classList.contains('hide')) return;
-    const top = Math.max(0, toolbarBottom());
-    const bottom = innerHeight;
-    if (top >= bottom || results.getBoundingClientRect().top > bottom + preloadDistance) return;
-
-    const items = chapterNodes.flatMap(chapter => chapter.node.hidden ? [] : chapter.sections
-      .filter(section => !section.node.hidden)
-      .map(section => ({chapter: chapter.node, node: section.node})));
-    const bounds = item => (item.chapter.open ? item.node : item.chapter).getBoundingClientRect();
-    let index = items.findIndex(item => item.node.id === currentSectionId);
-    if (index < 0) {
-      index = items.findIndex(item => bounds(item).bottom >= top);
-      if (index < 0 || bounds(items[index]).top > bottom + preloadDistance) return;
-      const initial = items[index];
-      const offset = bounds(initial).top;
-      const anchor = initial.chapter.open ? initial.node : initial.chapter;
-      showSection(initial);
-      currentSectionId = initial.node.id;
-      keepSections([initial], anchor, offset);
-      return;
-    }
-
-    const current = items[index];
-    const next = items[index + scrollDirection];
-    if (!next) return;
-    const rect = current.node.getBoundingClientRect();
-    const forward = scrollDirection > 0;
-    const nearby = forward ? rect.bottom <= bottom + preloadDistance : rect.top >= top - preloadDistance;
-    if (!nearby) return;
-
-    const nextWasOpen = next.chapter.open && next.node.open;
-    const offset = rect.top;
-    showSection(next);
-    if (!forward && !nextWasOpen) pin(current.node, offset);
-
-    const currentBounds = current.node.getBoundingClientRect();
-    const passed = forward ? currentBounds.bottom <= top : currentBounds.top >= bottom;
-    if (!passed) {
-      keepSections([current, next], current.node, currentBounds.top);
-      return;
-    }
-
-    currentSectionId = next.node.id;
-    const nextBounds = next.node.getBoundingClientRect();
-    const overshot = nextBounds.bottom <= top || nextBounds.top < top - 120 || (!nextWasOpen && nextBounds.top < top);
-    const anchorAt = forward && overshot ? top + 8 : nextBounds.top;
-    keepSections([next], next.node, anchorAt);
-  }
-
-  function scheduleAuto() {
-    if (autoEnabled && !autoFrame) autoFrame = requestAnimationFrame(updateAuto);
-  }
-
-  autoControl.addEventListener('change', () => {
-    autoEnabled = autoControl.checked;
-    autoSuspendedUntil = 0;
-    currentSectionId = undefined;
-    lastScrollY = scrollY;
-    try { localStorage.setItem('eternum-route-auto', autoEnabled ? 'on' : 'off'); } catch {}
-    updateAutoLabel();
-    scheduleAuto();
-  });
-
   results.addEventListener('click', event => {
-    const summary = event.target.closest('summary');
-    const node = summary?.parentElement;
+    const node = event.target.closest('summary')?.parentElement;
     if (!node?.matches('.route-chapter, .route-section')) return;
     event.preventDefault();
-    suspendAuto();
-    const open = !(animations.get(node)?.open ?? node.open);
-    setOpen(node, open);
-    currentSectionId = open && node.matches('.route-section') ? node.id : undefined;
+    setOpen(node, !(animations.get(node)?.open ?? node.open));
   });
 
-  window.addEventListener('scroll', () => {
-    if (scrollY !== lastScrollY) scrollDirection = scrollY > lastScrollY ? 1 : -1;
-    lastScrollY = scrollY;
-    scheduleAuto();
-  }, {passive: true});
-  window.addEventListener('resize', scheduleAuto);
+  const scoresDialog = $('scoresDialog');
+  $('scoresButton').onclick = () => {
+    const profile = activeProfile();
+    if (!profile) return profileModal(true);
+    const totals = new Map([...characterIds, 'chang'].map(id => [id, 0]));
+    for (const [id, index] of Object.entries(profile.choices || {})) {
+      const block = entryMap.get(id)?.blocks[index];
+      for (const [character, delta, milestone] of block?.affection || []) {
+        if (milestone && !profile.done?.[milestone]) continue;
+        totals.set(character, totals.get(character) + delta);
+      }
+    }
+    $('scoresProfile').textContent = profile.name;
+    $('scoresList').innerHTML = [...totals].map(([id, total]) => `
+      <div class="score-row"><dt style="--c:${color(id)}">${esc(id === 'chang' ? t('Микаэла', 'Michaela') : name(id))}</dt>
+      <dd>${total > 0 ? '+' : ''}${total}</dd></div>`).join('');
+    scoresDialog.showModal();
+  };
+  scoresDialog.onclick = event => {
+    if (event.target === scoresDialog) scoresDialog.close();
+  };
 
   renderGuide();
   localizeInterface();
@@ -483,7 +400,6 @@
   applyFilter();
   profileModal(!activeProfile());
   $('section-1.1').open = true;
-  scheduleAuto();
   if (location.hash) requestAnimationFrame(() => jump($(location.hash.slice(1))));
 })().catch(error => {
   console.error(error);
