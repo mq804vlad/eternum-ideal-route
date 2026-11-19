@@ -7,7 +7,7 @@
     if (!response.ok) throw new Error(`Could not load ${path}: ${response.status}`);
     return response.json();
   };
-  const [db, translations] = await Promise.all([loadJson('./guide.json?v=6e703fa09aae'), loadJson('./translations.json?v=bb84587f5b57')]);
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=f2d9c692ccc6'), loadJson('./translations.json?v=bb84587f5b57')]);
   let language = 'ru';
   try {
     if (localStorage.getItem('eternum-route-language') === 'en') language = 'en';
@@ -113,14 +113,15 @@
 
   function makeBlocks(entry) {
     return entry.blocks.map((block, index) => {
-      const text = linkReferences(message(block.text)).replaceAll('\n', '<br>');
+      const blockText = language === 'ru' && block.ru ? block.ru : message(block.text);
+      const text = linkReferences(blockText).replaceAll('\n', '<br>');
       if (block.kind === 'note') return `<div class="route-note">${text}</div>`;
       const selectable = entry.kind !== 'section' && isOption(block);
       const picked = selectable && activeProfile()?.choices?.[entry.id] === index;
       return `<div class="choice ${block.ideal ? 'ideal' : ''} ${block.kind !== 'option' ? 'route-dialogue' : ''} ${picked ? 'picked' : ''}">
         ${block.ideal ? `<span class="recommend" role="img" aria-label="${t('Рекомендуемый вариант', 'Recommended choice')}">◆</span>` : ''}${text}
         ${block.notes.map(note => `<p class="choice-note">${linkReferences(message(note))}</p>`).join('')}
-        ${selectable ? `<button type="button" class="choice-pick" data-choice="${entry.id}" data-option="${index}" aria-pressed="${picked}" aria-label="${t('Выбор', 'Choice')}: ${esc(message(block.text))}"></button>` : ''}
+        ${selectable ? `<button type="button" class="choice-pick" data-choice="${entry.id}" data-option="${index}" aria-pressed="${picked}" aria-label="${t('Выбор', 'Choice')}: ${esc(blockText)}"></button>` : ''}
       </div>`;
     }).join('');
   }

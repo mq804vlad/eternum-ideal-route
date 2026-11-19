@@ -113,7 +113,8 @@
           "text": "Chang",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Чанг"
         },
         {
           "text": "Annie",
@@ -127,7 +128,8 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Энни"
         }
       ]
     },
@@ -143,7 +145,8 @@
           "text": "Pick up the phone",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Ответить на звонок"
         },
         {
           "text": "Let it ring",
@@ -151,7 +154,8 @@
             "Skip to 1.2.4"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пусть звонит"
         }
       ]
     },
@@ -177,13 +181,15 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "Уступить ей"
         },
         {
           "text": "Keep her waiting",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пусть ждет"
         }
       ]
     },
@@ -202,13 +208,15 @@
           "text": "Ask them to stay",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Попросить их остаться"
         },
         {
           "text": "Ask for a favor in return",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отпустить их в обмен на услугу"
         },
         {
           "text": "Let them go",
@@ -226,7 +234,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Пусть идут, еще будет время"
         }
       ]
     },
@@ -286,7 +295,8 @@
             "You will miss a mini lewd with Nancy later (1.9)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хорошая идея"
         },
         {
           "text": "Knocking the door is good enough",
@@ -306,7 +316,8 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "В этом нет необходимости"
         }
       ]
     },
@@ -324,7 +335,8 @@
           "text": "About your body",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "О твоем теле"
         },
         {
           "text": "About what you were saying",
@@ -338,13 +350,15 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "О том, что ты сказала"
         },
         {
           "text": "About nothing",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ни о чем"
         }
       ]
     },
@@ -370,7 +384,8 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Быть вежливым"
         },
         {
           "text": "Be agressive with the guy",
@@ -390,7 +405,8 @@
           "text": "Ignore it and go to school",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Проигнорировать и пойти в школу"
         }
       ]
     },
@@ -422,7 +438,8 @@
           "text": "Don’t go",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не идти"
         }
       ]
     },
@@ -483,13 +500,15 @@
               1,
               "1.8.2"
             ]
-          ]
+          ],
+          "ru": "Хорошенько очистить"
         },
         {
           "text": "Clean it quickly so you can leave",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Просто протереть ее"
         }
       ]
     },
@@ -509,13 +528,15 @@
             "Skip to 1.6"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вылезти из ванны"
         },
         {
           "text": "Stay hidden",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Затаиться"
         }
       ]
     },
@@ -551,13 +572,15 @@
           "text": "I fell asleep",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Заснул"
         },
         {
           "text": "I didn’t hear you",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я тебя не услышал"
         },
         {
           "text": "I was stunned by your beauty",
@@ -571,7 +594,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Я был потрясен твоей красотой"
         }
       ]
     },
@@ -612,7 +636,8 @@
           "text": "Don’t interfere",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Просто стоять в сторонке"
         }
       ]
     },
@@ -650,19 +675,22 @@
           "text": "Justin Bieber",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Джастин Бибер"
         },
         {
           "text": "Elon Musk",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Илон Маск"
         },
         {
           "text": "Katy Perry",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Кэти Перри"
         }
       ]
     },
@@ -718,25 +746,29 @@
           "text": "Bruno",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Бруно"
         },
         {
           "text": "Allen",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Аллен"
         },
         {
           "text": "Patrick",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Патрик"
         },
         {
           "text": "Maxwell",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Максвелл"
         }
       ]
     },
@@ -752,25 +784,29 @@
           "text": "7000 miles (11,300 km)",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "11 000 км"
         },
         {
           "text": "8000 miles (12,900 km)",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "13 000 км"
         },
         {
           "text": "9000 miles (14,500 km)",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "14 500 км"
         },
         {
           "text": "A couple of million miles (3,218,688 km)",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "3 218 688 км"
         }
       ]
     },
@@ -786,25 +822,29 @@
           "text": "1 month and 14 days",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "1 месяц и 14 дней"
         },
         {
           "text": "2 months and 7 days",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "2 месяца и 7 дней"
         },
         {
           "text": "3 months and 21 days",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "3 месяца и 21 день"
         },
         {
           "text": "4 months and 28 days",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "4 месяца и 28 дней."
         }
       ]
     },
@@ -820,25 +860,29 @@
           "text": "Artemis",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Артемида"
         },
         {
           "text": "Persephone",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Персефона"
         },
         {
           "text": "Demeter",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Деметра"
         },
         {
           "text": "Freya",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Фрея"
         }
       ]
     },
@@ -854,25 +898,29 @@
           "text": "88 days",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "88 дней"
         },
         {
           "text": "101 days",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "101 день"
         },
         {
           "text": "215 days",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "215 дней"
         },
         {
           "text": "365 days",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "365 дней"
         }
       ]
     },
@@ -888,25 +936,29 @@
           "text": "Belgium",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Бельгия"
         },
         {
           "text": "Cuba",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Куба"
         },
         {
           "text": "Montenegro",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Черногория"
         },
         {
           "text": "East Timor",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Восточный Тимор"
         }
       ]
     },
@@ -922,25 +974,29 @@
           "text": "Timothy Byrd",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Тимоти Берд"
         },
         {
           "text": "Benjamin Pharrow",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Бенджамин Фэрроу"
         },
         {
           "text": "William Bardot",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Уильям Бардо"
         },
         {
           "text": "James Blanc",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Джеймс Бланк"
         }
       ]
     },
@@ -991,13 +1047,15 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Обнять ее"
         },
         {
           "text": "Give her space",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не делать этого"
         }
       ]
     },
@@ -1042,13 +1100,15 @@
               1,
               "1.14.1"
             ]
-          ]
+          ],
+          "ru": "Поставить"
         },
         {
           "text": "Don’t give it a like",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не ставить"
         }
       ]
     },
@@ -1099,13 +1159,15 @@
           "text": "Compliment her swimming skills",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отметить ее навыки плавания"
         },
         {
           "text": "Compliment her hair",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отметить ее волосы"
         },
         {
           "text": "Compliment her pen",
@@ -1119,7 +1181,8 @@
               "alex",
               1
             ]
-          ]
+          ],
+          "ru": "Отметить ее ручку"
         }
       ]
     },
@@ -1163,13 +1226,15 @@
           "text": "Jump",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Прыгнуть"
         },
         {
           "text": "Don’t jump",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не прыгать"
         },
         {
           "kind": "note",
@@ -1199,7 +1264,8 @@
           "text": "Don’t activate the glasses",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не активировать очки"
         }
       ]
     },
@@ -1218,19 +1284,22 @@
           "text": "Buy the shovel",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Купить лопату"
         },
         {
           "text": "Buy the pistol",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Купить пистолет"
         },
         {
           "text": "Buy the glasses",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Купить очки"
         },
         {
           "text": "Buy the pendant",
@@ -1245,7 +1314,8 @@
               1,
               "1.13.1"
             ]
-          ]
+          ],
+          "ru": "Купить кулон"
         },
         {
           "kind": "note",
@@ -1269,7 +1339,8 @@
           "text": "Go explore",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Прогуляться по Иону"
         },
         {
           "text": "Wait for Annie",
@@ -1277,7 +1348,8 @@
             "End of Eva’s story. Skip to 1.13."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Подождать Энни"
         }
       ]
     },
@@ -1297,7 +1369,8 @@
             "Этерналы -1200"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пойти с Евой"
         },
         {
           "text": "Leave",
@@ -1305,7 +1378,8 @@
             "End of Eva’s story. Skip to 1.13."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Уйти"
         }
       ]
     },
@@ -1376,13 +1450,15 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Вмешаться"
         },
         {
           "text": "Stay out of it",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не вмешиваться"
         }
       ]
     },
@@ -1427,7 +1503,8 @@
           "text": "Go with her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пойти с ней"
         },
         {
           "text": "Don’t go",
@@ -1435,7 +1512,8 @@
             "потеря ветки (Пенни)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не идти"
         }
       ]
     },
@@ -1453,7 +1531,8 @@
           "text": "Go with her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пойти с ней"
         },
         {
           "text": "Don’t go",
@@ -1461,7 +1540,8 @@
             "потеря ветки (Нэнси)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не идти"
         }
       ]
     },
@@ -1520,7 +1600,8 @@
           "text": "Grab Dalia’s things and flee",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Схватить вещи Далии и убежать"
         },
         {
           "text": "Stay",
@@ -1534,7 +1615,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Остаться"
         }
       ]
     },
@@ -1561,7 +1643,8 @@
           "text": "Go with her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пойти с ней"
         },
         {
           "text": "Don’t go",
@@ -1569,7 +1652,8 @@
             "потеря ветки (Далия)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не идти"
         }
       ]
     },
@@ -1604,7 +1688,8 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Взять Энни с собой"
         },
         {
           "text": "Don’t let her come with you",
@@ -1612,7 +1697,8 @@
             "You’ll lose Annie’s path later (2.4.4)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отказать ей"
         }
       ]
     },
@@ -1639,13 +1725,15 @@
               1,
               "2.9.2"
             ]
-          ]
+          ],
+          "ru": "Врезать ему"
         },
         {
           "text": "Try to calm him down",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Попытаться успокоить его"
         }
       ]
     },
@@ -1663,7 +1751,8 @@
           "text": "That character has his eyes covered too. Is that why you like it?",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "У этого персонажа тоже повязка на глазах. Ты ее поэтому носишь?"
         },
         {
           "text": "It’s cool, I love anime too",
@@ -1677,13 +1766,15 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Это круто, я тоже люблю аниме"
         },
         {
           "text": "Hey, what’s that tattoo?",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Эй, что это за татуировка?"
         }
       ]
     },
@@ -1772,7 +1863,8 @@
               "luna",
               2
             ]
-          ]
+          ],
+          "ru": "Идти самому"
         },
         {
           "text": "Ask Luna to go",
@@ -1780,7 +1872,8 @@
             "You will lose Luna’s path later (2.4.3), skip to 2.4"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Попросить пойти Луну"
         }
       ]
     },
@@ -1841,7 +1934,8 @@
           "text": "Ask her about the gloves",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Спросить о перчатках"
         },
         {
           "text": "Don’t ask her",
@@ -1849,7 +1943,8 @@
             "потеря ветки (Луна), skip to 2.4.4"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не спрашивать"
         }
       ]
     },
@@ -1903,7 +1998,8 @@
           "text": "Let her sleep in your room",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пусть спит в твоей комнате"
         },
         {
           "text": "Send her to her room",
@@ -1911,7 +2007,8 @@
             "потеря ветки (Энни), skip to 2.6"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пусть идет к себе"
         }
       ]
     },
@@ -1967,7 +2064,8 @@
             "потеря ветки (Энни), skip to 2.6"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Остановиться на этом"
         },
         {
           "text": "Go further",
@@ -1981,7 +2079,8 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Идти дальше"
         }
       ]
     },
@@ -2027,13 +2126,15 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Предложить приготовить завтрак"
         },
         {
           "text": "Go wake up Dalia",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пойти будить Далию"
         }
       ]
     },
@@ -2115,7 +2216,8 @@
               "chang",
               1
             ]
-          ]
+          ],
+          "ru": "Цветы"
         },
         {
           "text": "A dumbbell",
@@ -2129,7 +2231,8 @@
               "chang",
               1
             ]
-          ]
+          ],
+          "ru": "Гантели"
         },
         {
           "text": "A ticket to a show",
@@ -2143,13 +2246,15 @@
               "chang",
               2
             ]
-          ]
+          ],
+          "ru": "Билет на концерт"
         },
         {
           "text": "Nothing",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ничего"
         }
       ]
     },
@@ -2169,13 +2274,15 @@
             "потеря ветки (Нэнси), skip to 2.9"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не вмешиваться в отношения Нэнси"
         },
         {
           "text": "Do something",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Придумать что-нибудь"
         }
       ]
     },
@@ -2202,7 +2309,8 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "Нанять Ноя и Рауля"
         },
         {
           "text": "Forget it",
@@ -2210,7 +2318,8 @@
             "потеря ветки (Нэнси), skip to 2.9"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не платить"
         }
       ]
     },
@@ -2265,13 +2374,15 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Погладить ее по голове"
         },
         {
           "text": "Just compliment her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Похвалить ее"
         }
       ]
     },
@@ -2347,7 +2458,8 @@
             "потеря ветки (Алекс), skip to 2.10"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Молчать"
         },
         {
           "text": "Say something",
@@ -2379,13 +2491,15 @@
               "alex",
               1
             ]
-          ]
+          ],
+          "ru": "Обнять ее в ответ"
         },
         {
           "text": "Don’t hug her back",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не обнимать"
         }
       ]
     },
@@ -2472,13 +2586,15 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Позвонить ей"
         },
         {
           "text": "Send her a message",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Написать сообщение"
         }
       ]
     },
@@ -2516,13 +2632,15 @@
             "Skip to 2.12.3"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Взять пончик для Пенелопы"
         },
         {
           "text": "Get a coffee for Penelope",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Взять кофе для Пенелопы"
         }
       ]
     },
@@ -2540,13 +2658,15 @@
           "text": "1 teaspoon of sugar",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "1 чайная ложка сахара"
         },
         {
           "text": "2 teaspoons of sugar",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "2 чайные ложки сахара"
         },
         {
           "text": "3 teaspoons of sugar",
@@ -2560,7 +2680,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "3 чайные ложки сахара"
         }
       ]
     },
@@ -2578,7 +2699,8 @@
           "text": "Take the photo with zoom in",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сделать снимок с увеличением"
         },
         {
           "text": "Take the photo with normal zoom",
@@ -2592,13 +2714,15 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Сделать снимок с нормальным расстоянием"
         },
         {
           "text": "Take the photo with zoom out",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сделать снимок с отдалением"
         }
       ]
     },
@@ -2618,7 +2742,8 @@
             "потеря ветки (Пенни), skip to 2.14"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Убедить Пенелопу раздеться"
         },
         {
           "text": "Tell Mr. Valentino to fuck off",
@@ -2632,7 +2757,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Сказать ему чтобы он шел нахуй"
         }
       ]
     },
@@ -2694,13 +2820,15 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Сделать ей комплимент"
         },
         {
           "text": "Don’t waste any time",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не терять времени"
         }
       ]
     },
@@ -2730,7 +2858,8 @@
           "text": "Ask Alex to open the box",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пусть Алекс откроет коробку"
         },
         {
           "text": "Open the box yourself",
@@ -2748,13 +2877,15 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Открыть коробку самому"
         },
         {
           "text": "Ask Nova to open the box",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пусть Нова откроет коробку"
         }
       ]
     },
@@ -2783,7 +2914,8 @@
           "text": "Be tough with her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Быть строгим с ней"
         },
         {
           "text": "Forgive her",
@@ -2797,7 +2929,8 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Простить ее"
         }
       ]
     },
@@ -2817,13 +2950,15 @@
             "потеря ветки (Нова), end of Maat’s story, skip to 3.5"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вернуться в реальный мир"
         },
         {
           "text": "Go rescue Nova",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Идти спасать Нову"
         }
       ]
     },
@@ -2859,7 +2994,8 @@
             "End of Maat’s story, skip to 3.4"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Уйти"
         },
         {
           "text": "Fuck Maat",
@@ -2867,7 +3003,8 @@
             "Triggers the next lewd scene and you will later meet Maat again (8.18.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Трахнуть Маат"
         }
       ]
     },
@@ -2933,13 +3070,15 @@
             "Этерналы +250"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Украсть деньги Маат"
         },
         {
           "text": "Don’t touch the money",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не трогать деньги"
         }
       ]
     },
@@ -2993,7 +3132,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Кексики Далии"
         },
         {
           "text": "Alex’s bagels",
@@ -3007,7 +3147,8 @@
               "alex",
               1
             ]
-          ]
+          ],
+          "ru": "Пончики Алекс"
         }
       ]
     },
@@ -3045,7 +3186,8 @@
             "потеря ветки (Энни), skip to 3.7"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Забыть об этом"
         },
         {
           "text": "Tell her you like her",
@@ -3059,7 +3201,8 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Сказать ей, что она тебе нравится"
         }
       ]
     },
@@ -3077,7 +3220,8 @@
           "text": "Don’t risk it",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не рисковать"
         },
         {
           "text": "Kiss her",
@@ -3091,7 +3235,8 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Поцеловать ее"
         }
       ]
     },
@@ -3116,13 +3261,15 @@
           "text": "Black",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Черный"
         },
         {
           "text": "Red",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Красный"
         }
       ]
     },
@@ -3169,7 +3316,8 @@
             "The reminiscence fails, save for a very short vision..."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Выбрать себя"
         },
         {
           "text": "Penelope",
@@ -3219,7 +3367,8 @@
           "text": "Trust her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Поверить ей"
         },
         {
           "kind": "note",
@@ -3252,13 +3401,15 @@
           "text": "Yeah, you’re not special",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ты не особенная"
         },
         {
           "text": "You stand out",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ты выделяешься"
         },
         {
           "text": "You’re special to me",
@@ -3272,7 +3423,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Ты особенная для меня"
         }
       ]
     },
@@ -3348,7 +3500,8 @@
             "Skip to 3.15"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Покинуть сервер"
         },
         {
           "text": "Go back to the castle",
@@ -3356,7 +3509,8 @@
             "Return to the map: 3.8"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Вернуться в замок"
         }
       ]
     },
@@ -3392,13 +3546,15 @@
           "text": "Restoration",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Магия Восстановления"
         },
         {
           "text": "Destruction",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Магия Разрушения"
         }
       ]
     },
@@ -3427,13 +3583,15 @@
             "Этерналы -1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Купить яблоко"
         },
         {
           "text": "Don’t buy it",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не покупать"
         }
       ]
     },
@@ -3453,13 +3611,15 @@
             "Этерналы -200"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Купить билет"
         },
         {
           "text": "Don’t buy it",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не покупать"
         }
       ]
     },
@@ -3479,13 +3639,15 @@
             "Этерналы -6"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Дать ему 6 этерналов"
         },
         {
           "text": "Don’t give him anything",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ничего не давать"
         }
       ]
     },
@@ -3521,7 +3683,8 @@
           "text": "Ask for something spicy",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Попросить что-нибудь пошленькое"
         },
         {
           "text": "Don’t ask for anything in return",
@@ -3529,7 +3692,8 @@
             "потеря ветки (Далия)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ничего не просить"
         }
       ]
     },
@@ -3571,7 +3735,8 @@
           "text": "Finish him off",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Убить его"
         },
         {
           "text": "Spare his life",
@@ -3579,7 +3744,8 @@
             "Нэнси +1 if ветка Нэнси активна"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пощадить"
         }
       ]
     },
@@ -3613,7 +3779,8 @@
           "text": "Accept the invitation",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Принять приглашение"
         },
         {
           "text": "Don’t accept it and go back home",
@@ -3621,7 +3788,8 @@
             "Skip to 3.18"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вернуться домой"
         }
       ]
     },
@@ -3704,7 +3872,8 @@
           "text": "Rocky",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Рокки"
         },
         {
           "text": "The Lord of the Rings",
@@ -3718,25 +3887,29 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Властелин Колец"
         },
         {
           "text": "Fight Club",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Бойцовский клуб"
         },
         {
           "text": "Harry Potter",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Гарри Поттер"
         },
         {
           "text": "Million Dollar Baby",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Малышка на миллион"
         }
       ]
     },
@@ -3761,13 +3934,15 @@
           "text": "Open the letter",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Открыть письмо"
         },
         {
           "text": "Don’t open the letter",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не открывать письмо"
         }
       ]
     },
@@ -3794,13 +3969,15 @@
           "text": "Far-fetched story",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Выдуманная история"
         },
         {
           "text": "Credible story",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Правдивая история"
         },
         {
           "text": "Stay close to reality",
@@ -3815,7 +3992,8 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "История, недалекая от реальности"
         }
       ]
     },
@@ -3847,13 +4025,15 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Положить руку ей на плечо"
         },
         {
           "text": "Focus on the mission",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сосредоточиться на миссии"
         }
       ]
     },
@@ -3910,13 +4090,15 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Сесть между ними"
         },
         {
           "text": "Sit on the other sofa",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сесть на другой диван"
         }
       ]
     },
@@ -3932,13 +4114,15 @@
           "text": "Heads",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Орел"
         },
         {
           "text": "Tails",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Решка"
         }
       ]
     },
@@ -3982,7 +4166,8 @@
           "text": "Don’t tip her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не давай ей чаевых"
         },
         {
           "text": "Give her a small tip",
@@ -3996,7 +4181,8 @@
               "alex",
               1
             ]
-          ]
+          ],
+          "ru": "Дать ей небольшие чаевые"
         },
         {
           "text": "Giver her a big tip",
@@ -4053,13 +4239,15 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "Подыграть"
         },
         {
           "text": "Correct her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Поправить ее"
         }
       ]
     },
@@ -4079,7 +4267,8 @@
             "потеря ветки (Далия), skip to 4.9"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вернуться домой вместе с ней"
         },
         {
           "text": "Convince her to participate",
@@ -4093,7 +4282,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Убедить ее принять участие"
         }
       ]
     },
@@ -4119,13 +4309,15 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Сказать ей об этом"
         },
         {
           "text": "Say nothing",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ничего не говорить"
         }
       ]
     },
@@ -4145,13 +4337,15 @@
             "You’ll lose Dalia’s path later (4.7.1)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сообщить Чангу пароль"
         },
         {
           "text": "Keep it a secret",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Держать в секрете"
         }
       ]
     },
@@ -4177,13 +4371,15 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Поцеловать ее в ответ"
         },
         {
           "text": "Stand still",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ничего не делать"
         }
       ]
     },
@@ -4201,7 +4397,8 @@
           "text": "Say something to him",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сказать ему что-нибудь"
         },
         {
           "text": "Leave",
@@ -4253,7 +4450,8 @@
           "text": "Go after her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Идти за ней"
         },
         {
           "text": "Give her space",
@@ -4421,13 +4619,15 @@
           "text": "Got it. I’ll text you tomorrow. Cya Alex",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Понял. Я напишу тебе завтра. Увидимся, Алекс"
         },
         {
           "text": "Got it. I’ll text you tomorrow. Cya Alexandra",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Понял. Я напишу тебе завтра. Увидимся, Александра"
         },
         {
           "kind": "note",
@@ -4463,13 +4663,15 @@
           "text": "Ha. ha. ha. Very funny, Dalia...",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ха. ха. ха. ха. Очень смешно, Далия..."
         },
         {
           "text": "Funny you should mention that...",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Забавно, что ты скинула мне это..."
         },
         {
           "text": "Anyway, I’m jumping in the shower. Bye!",
@@ -4487,13 +4689,15 @@
           "text": "Maybe I’m not the one with a bad sense of humor.",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Может, это не у меня плохое чувство юмора."
         },
         {
           "text": "See you later!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "До встречи!"
         },
         {
           "text": "HAHAHAHA",
@@ -4505,13 +4709,15 @@
           "text": "Now I see where you got your style from",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Теперь я понимаю, с кого ты скопировала свой стиль"
         },
         {
           "text": "Maybe you should go back to the braids",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Может, тебе стоит вернуться к косам?"
         }
       ]
     },
@@ -4541,13 +4747,15 @@
           "text": "What’s up? How can I help my favorite client?",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Что случилось? Как я могу помочь моей любимой модели?"
         },
         {
           "text": "Don’t have time right now, Penny",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сейчас у меня нет времени, Пенни."
         },
         {
           "text": "Option A or option B?",
@@ -4577,13 +4785,15 @@
           "text": "Option A",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вариант А"
         },
         {
           "text": "Option B",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вариант Б"
         }
       ]
     },
@@ -4613,13 +4823,15 @@
           "text": "That doesn’t seem very urgent... I’ve got things to do, I’ll see you later",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Кажется, это не очень срочно... У меня есть дела, увидимся позже."
         },
         {
           "text": "That’s... kind of an oddly specific question to ask",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Это... Довольно странный вопрос"
         },
         {
           "text": "Just answer!",
@@ -4631,19 +4843,22 @@
           "text": "You sealed your fate the moment you put your filthy hands on her, demon. Go to hell... again.",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ты сам предрешил свою судьбу, когда наложил на нее свои грязные руки, демон! Катись в Ад... Снова!"
         },
         {
           "text": "The only fate of the weak is to be crushed by the strong. Know your place, demon.",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Удел слабых - быть раздавленным сильным. Знай свое место, демон!"
         },
         {
           "text": "Nothing personal, demon. Just taking out the trash.",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ничего личного, демон. Просто вынес мусор."
         },
         {
           "text": "Stop bothering me!",
@@ -4655,13 +4870,15 @@
           "text": "Haha okay, okay, get back to your... thing",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хаха ладно, ладно, возвращайся к своим... Что бы там ни было."
         },
         {
           "text": "You’re the one who texted me!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Это ты мне написала!"
         }
       ]
     },
@@ -4691,7 +4908,8 @@
           "text": "Thanks! But I prefer not to, it seems like a family thing",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Спасибо! Но я, пожалуй, откажусь, это все-таки семейный праздник"
         },
         {
           "text": "Really? I’d love to!",
@@ -4721,7 +4939,8 @@
           "text": "Not very spicy",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не очень острые"
         },
         {
           "text": "I’m sorry about that, he grabbed my phone",
@@ -4733,13 +4952,15 @@
           "text": "Haha no worries, your dad’s just as awesome as you",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хаха, не волнуйся, твой отец такой же замечательный, как и ты"
         },
         {
           "text": "Your father is a bit... out there",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Твой отец немного... Не от мира сего"
         },
         {
           "kind": "note",
@@ -4781,7 +5002,8 @@
           "text": "Looks great!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Выглядит супер!"
         },
         {
           "kind": "note",
@@ -4799,13 +5021,15 @@
           "text": "That sounds awesome!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Звучит превосходно!"
         },
         {
           "text": "Meh, I’m not a fan of the beach",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я не фанат пляжей"
         }
       ]
     },
@@ -4829,13 +5053,15 @@
           "text": "What do you need?",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Что от меня требуется?"
         },
         {
           "text": "Sorry bro, I don’t have the time rn",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Извини, бро, у меня сейчас нет времени"
         },
         {
           "text": "What tie looks better on me?",
@@ -4847,7 +5073,8 @@
           "text": "Bro they’re identical",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Бро, они одинаковы"
         },
         {
           "text": "Wait, I’ll take new photos with better lighting",
@@ -4859,7 +5086,8 @@
           "text": "Those are the same exact photos!!!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Это те же самые фотографии!!!"
         },
         {
           "text": "No they’re not! Help me out here, please!",
@@ -4871,19 +5099,22 @@
           "text": "They’re the same fucking color.",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Они, блядь, одного цвета."
         },
         {
           "text": "The first one",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Первый"
         },
         {
           "text": "The second one",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Второй"
         },
         {
           "kind": "note",
@@ -4923,7 +5154,8 @@
           "text": "Sure",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Конечно"
         },
         {
           "text": "No",
@@ -4955,19 +5187,22 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Соверши прыжок веры!"
         },
         {
           "text": "Let’s get this shit done!",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Давай покончим с этим дерьмом"
         },
         {
           "text": "Nothing ventured, nothing gained!",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Кто не рискует, тот не пьет шампанского"
         }
       ]
     },
@@ -4993,13 +5228,15 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Интерстеллар"
         },
         {
           "text": "Hot Tub Time Machine 2",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Машина времени в джакузи 2"
         }
       ]
     },
@@ -5053,7 +5290,8 @@
           "text": "Agree",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Согласиться"
         },
         {
           "text": "Decline and stay as friends",
@@ -5061,7 +5299,8 @@
             "потеря ветки (Энни), skip to 4.17"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отказаться и остаться друзьями"
         }
       ]
     },
@@ -5132,13 +5371,15 @@
             "You can now listen to audio logs you find on the space station by clicking the disc in the top right. This is optional! The MC will sometimes comment on the audio logs if you listen to them right after you find them."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Взять диктофон"
         },
         {
           "text": "Don’t touch it",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не брать его"
         }
       ]
     },
@@ -5159,13 +5400,15 @@
             "Этерналы -500, skip to 4.16"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Заплатить ему"
         },
         {
           "text": "Go find the egg",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пойти за яйцом"
         }
       ]
     },
@@ -5181,7 +5424,8 @@
           "text": "Take the gun",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Взять пушку"
         },
         {
           "text": "Don’t take it",
@@ -5189,7 +5433,8 @@
             "You might die later (4.15.1)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не брать"
         }
       ]
     },
@@ -5213,7 +5458,8 @@
             "Continue at 4.14"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Помочь Василию и идти за яйцом"
         },
         {
           "text": "Help Commander Hasler and place the bomb",
@@ -5221,7 +5467,8 @@
             "Continue at 4.15"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Помочь Хаслеру и установить бомбу"
         }
       ]
     },
@@ -5259,13 +5506,15 @@
           "text": "Uncuff her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Снять с нее наручники"
         },
         {
           "text": "Don’t uncuff her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не снимать с нее наручники"
         }
       ]
     },
@@ -5283,13 +5532,15 @@
             "You die. Skip to 4.17"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Заглянуть в открытое яйцо"
         },
         {
           "text": "Grab a closed egg and leave",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Взять закрытое яйцо и уйти"
         },
         {
           "kind": "note",
@@ -5400,13 +5651,15 @@
           "text": "Listen to his last audio log",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Послушать его последний аудиодневник"
         },
         {
           "text": "Forget about it",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не слушать"
         }
       ]
     },
@@ -5457,7 +5710,8 @@
           "text": "You look incredibly beautiful tonight",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ты выглядишь невероятно красивой сегодня"
         },
         {
           "text": "You look like a high-society gal!",
@@ -5471,7 +5725,8 @@
               "alex",
               1
             ]
-          ]
+          ],
+          "ru": "Ты выглядишь как настоящая светская львица"
         }
       ]
     },
@@ -5536,19 +5791,22 @@
           "text": "The Gems of Doom",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Камни Судьбы"
         },
         {
           "text": "Women",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Женщины"
         },
         {
           "text": "Money and power",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Деньги и власть"
         },
         {
           "text": "Answers",
@@ -5556,7 +5814,8 @@
             "He’ll arrange a meeting with you at midnight, but you will never make it to that meeting. There are no further consequences in the current version of the game."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Ответы"
         }
       ]
     },
@@ -5592,7 +5851,8 @@
           "text": "Nah, let’s hang out here",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Нет, давай отдохнем"
         },
         {
           "text": "Let’s focus on our goal first",
@@ -5600,7 +5860,8 @@
             "потеря ветки (Алекс), skip to 5.1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сосредоточимся на нашей цели"
         }
       ]
     },
@@ -5675,7 +5936,8 @@
             "So far, there is only one instance where the Amulet prevents your death (6.6.13, 6.7.2). However, the benefit is minimal and it is implied that using the Amulet comes at a price."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Взять амулет"
         },
         {
           "text": "Refuse",
@@ -5758,7 +6020,8 @@
               "nova",
               -1
             ]
-          ]
+          ],
+          "ru": "Посмотреть"
         },
         {
           "text": "Don’t look",
@@ -5766,7 +6029,8 @@
             "Bonus segment with Nova and Nova +1 later (5.10)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не смотреть"
         }
       ]
     },
@@ -5792,13 +6056,15 @@
               "chang",
               1
             ]
-          ]
+          ],
+          "ru": "Дать Чангу задание"
         },
         {
           "text": "Don’t give him any task",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не давать ему никаких заданий"
         }
       ]
     },
@@ -5843,7 +6109,8 @@
             "You’ll make it to the party in time, don’t worry."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сесть в машину"
         },
         {
           "text": "Don’t risk tomorrow’s party",
@@ -5851,7 +6118,8 @@
             "потеря ветки (Луна), skip to 5.9"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не рисковать завтрашней вечеринкой"
         }
       ]
     },
@@ -5869,7 +6137,8 @@
           "text": "Sit in the front",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сесть спереди"
         },
         {
           "text": "Sit in the back with Luna",
@@ -5883,7 +6152,8 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Сесть сзади с Луной"
         }
       ]
     },
@@ -5899,7 +6169,8 @@
           "text": "Play the game",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Играть в игру"
         },
         {
           "text": "Pass",
@@ -5907,7 +6178,8 @@
             "Skip to 5.5"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отказаться"
         }
       ]
     },
@@ -5958,13 +6230,15 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Она прекрасна"
         },
         {
           "text": "No opinion",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не отвечать"
         }
       ]
     },
@@ -6037,7 +6311,8 @@
           "text": "Do nothing",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ничего не делать"
         },
         {
           "text": "Put your arm around her",
@@ -6051,13 +6326,15 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Приобнять ее"
         },
         {
           "text": "Caress her body",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пощупать ее"
         }
       ]
     },
@@ -6100,7 +6377,8 @@
           "text": "Correct him",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Поправить его"
         }
       ]
     },
@@ -6116,13 +6394,15 @@
           "text": "She’s just a friend",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Она просто подруга"
         },
         {
           "text": "I like her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Она мне нравится"
         }
       ]
     },
@@ -6140,7 +6420,8 @@
           "text": "Send a photo to Chang",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отправить фотку Чангу"
         },
         {
           "text": "Send a photo to Annie",
@@ -6154,7 +6435,8 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Отправить фотку Энни"
         }
       ]
     },
@@ -6211,7 +6493,8 @@
           "text": "Back off",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отступить"
         }
       ]
     },
@@ -6229,7 +6512,8 @@
           "text": "Stay in the same position",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Оставайтесь в той же позе"
         },
         {
           "text": "Hold Luna by the waist",
@@ -6243,7 +6527,8 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Обнять Луну за талию"
         }
       ]
     },
@@ -6261,7 +6546,8 @@
           "text": "Join the ofrenda",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Идти к офренде"
         },
         {
           "text": "Pass",
@@ -6269,7 +6555,8 @@
             "Skip to 5.6.9"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отказаться"
         }
       ]
     },
@@ -6285,13 +6572,15 @@
           "text": "Say something",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сказать что-нибудь"
         },
         {
           "text": "Remain silent",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сохранять молчание"
         }
       ]
     },
@@ -6309,7 +6598,8 @@
           "text": "Offer to give her a massage",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Предложить ей массаж"
         },
         {
           "text": "Leave",
@@ -6355,13 +6645,15 @@
             "The scene ends prematurely, skip to 5.9"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Массировать возле интимных мест"
         },
         {
           "text": "Don’t push it",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не перегибать палку"
         }
       ]
     },
@@ -6408,7 +6700,8 @@
             "Луна · образ 9"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Вернуться в дом"
         },
         {
           "text": "Don’t go back inside",
@@ -6416,7 +6709,8 @@
             "Skip to 5.9"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не возвращаться внутрь"
         }
       ]
     },
@@ -6511,19 +6805,22 @@
           "text": "Anything with fights and lots of action!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Все, где присутствуют схватки и много экшена!"
         },
         {
           "text": "A fishing simulator!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Симулятор рыбалки!"
         },
         {
           "text": "Something kinky!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Что-нибудь извращенное!"
         }
       ]
     },
@@ -6553,13 +6850,15 @@
           "text": "I won’t move an inch!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я не сдвинусь ни на шаг!"
         },
         {
           "text": "Ok, but hurry up",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хорошо, но поторопись"
         }
       ]
     },
@@ -6656,7 +6955,8 @@
           "text": "Is that from now? Where are you?",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ты сфоткалась прямо сейчас? Где ты?"
         },
         {
           "text": "Wow! I love it",
@@ -6716,7 +7016,8 @@
           "text": "Oh, nice! Chang’s gonna love this!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "О, неплохо! Чангу понравится!"
         },
         {
           "kind": "note",
@@ -6758,13 +7059,15 @@
           "text": "It’s not my thing, but...",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Мне не очень понравилось"
         },
         {
           "text": "It looks a little amateurish",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Выглядит слегка неумело"
         },
         {
           "text": "I just love it",
@@ -6778,7 +7081,8 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Я в восторге"
         }
       ]
     },
@@ -6856,7 +7160,8 @@
           "text": "Ok",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хорошо"
         },
         {
           "kind": "note",
@@ -6927,7 +7232,8 @@
             "You pass out and lose Akira’s game. Steps 4 and 5 become unavailable. Return to the party: 5.12"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Выпить еще одну"
         },
         {
           "text": "Stop here",
@@ -6962,13 +7268,15 @@
           "text": "Friend",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Моя подруга"
         },
         {
           "text": "Teammate",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Мой партнер по команде"
         },
         {
           "text": "Girl",
@@ -7006,13 +7314,15 @@
           "text": "That shit was nuts",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Это было безумием"
         },
         {
           "text": "Maat was hot, though",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Маат была сексуальной"
         },
         {
           "text": "That blowjob was something else",
@@ -7026,7 +7336,8 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Тот минет был особенным"
         }
       ]
     },
@@ -7044,7 +7355,8 @@
             "Advance to 5.15"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Предложить подрочить"
         },
         {
           "text": "Try getting distracted and hold on",
@@ -7052,7 +7364,8 @@
             "Skips the lewd, return to the party: 5.12"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отвлечься и сдержаться"
         }
       ]
     },
@@ -7096,7 +7409,8 @@
           "text": "Let her cum",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Пусть кончает"
         },
         {
           "kind": "note",
@@ -7129,7 +7443,8 @@
           "text": "Truth",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Правда"
         },
         {
           "text": "Dare",
@@ -7143,7 +7458,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Действие"
         }
       ]
     },
@@ -7161,13 +7477,15 @@
             "It doesn’t matter how you answer. Skip to 5.16.4"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Правда"
         },
         {
           "text": "Dare",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Действие"
         }
       ]
     },
@@ -7227,7 +7545,8 @@
           "text": "Charlotte",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Шарлотта"
         }
       ]
     },
@@ -7247,7 +7566,8 @@
             "Return to the party: 5.12"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Помочь ей"
         },
         {
           "text": "Discourage her from doing it",
@@ -7255,7 +7575,8 @@
             "потеря ветки (Пенни), skip to 5.18"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отговорить ее от этого"
         }
       ]
     },
@@ -7342,7 +7663,8 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "Сказать спасибо за кофе"
         },
         {
           "text": "Focus on the mission",
@@ -7375,7 +7697,8 @@
             "Nancy will occasionally roleplay as your mom for the rest of the game."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Притвориться ребенком Нэнси"
         },
         {
           "text": "Correct her",
@@ -7397,19 +7720,22 @@
           "text": "Other Gem of Doom owners",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Другие владельцы Камней Судьбы"
         },
         {
           "text": "Next Ulysses’ event",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Следующий ивент Улисс"
         },
         {
           "text": "The Founder",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Основатель"
         },
         {
           "text": "Leave",
@@ -7451,7 +7777,8 @@
           "text": "I just want what’s best for you",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я просто хочу лучшего для тебя"
         },
         {
           "text": "Maybe we should forget about ”us” until...",
@@ -7459,7 +7786,8 @@
             "потеря ветки (Нэнси), skip to 6.1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Может, нам стоит забыть о \"нас\", пока..."
         },
         {
           "text": "I know what I want, too",
@@ -7473,7 +7801,8 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "Я тоже знаю, чего хочу"
         }
       ]
     },
@@ -7522,19 +7851,22 @@
           "text": "Heracles",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Геракл"
         },
         {
           "text": "Nobody",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Никто"
         },
         {
           "text": "Eros",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Эрос"
         },
         {
           "text": "Other",
@@ -7542,7 +7874,8 @@
             "You can type in your own nickname"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Ввести имя"
         }
       ]
     },
@@ -7568,13 +7901,15 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Но не такое прекрасное, как эльфийская принцесса, которая сидит передо мной!"
         },
         {
           "text": "Although a bit cold. Wasn’t there somewhere warmer?",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хотя и холодновато. Разве нет места потеплее?"
         },
         {
           "text": "Why the long face, my Princess?",
@@ -7588,7 +7923,8 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Почему у тебя такое грустное лицо, моя принцесса?"
         }
       ]
     },
@@ -7606,7 +7942,8 @@
           "text": "Informal farewell",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Неформальное прощание"
         },
         {
           "text": "Formal farewell",
@@ -7620,7 +7957,8 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Официальное прощание"
         }
       ]
     },
@@ -7662,7 +8000,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Физический урон"
         },
         {
           "text": "Magic",
@@ -7676,7 +8015,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Магический урон"
         }
       ]
     },
@@ -7708,13 +8048,15 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "Флиртовать"
         },
         {
           "text": "Thank her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сказать спасибо"
         }
       ]
     },
@@ -7730,19 +8072,22 @@
           "text": "Loneliness",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Одиночество"
         },
         {
           "text": "Darkness",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Тьма"
         },
         {
           "text": "Failure",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Неудача"
         }
       ]
     },
@@ -7820,13 +8165,15 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Я их обожаю"
         },
         {
           "text": "I prefer tall girls",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Предпочитаю высоких девушек"
         }
       ]
     },
@@ -7858,13 +8205,15 @@
           "text": "Try again",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Попробуй еще раз"
         },
         {
           "text": "Look elsewhere",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Уйти"
         }
       ]
     },
@@ -7906,13 +8255,15 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Быть добрым к Клонку"
         },
         {
           "text": "Be rude to Clonk",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Нагрубить Клонку"
         }
       ]
     },
@@ -7928,7 +8279,8 @@
           "text": "Vote",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Голосовать"
         },
         {
           "text": "Not yet",
@@ -7960,31 +8312,36 @@
           "text": "Harley Jones, the hitwoman",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Харли Джонс, наемная убийца"
         },
         {
           "text": "Anna Piaget, the psychologist",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Анна Пиаже, психолог"
         },
         {
           "text": "Gemini, the psychic",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Гемини, экстрасенс"
         },
         {
           "text": "Sister Baek, the medium",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сестра Баек, медиум"
         },
         {
           "text": "Elliot Cook, the Collector’s son",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Эллиот Кук, сын Коллекционера"
         },
         {
           "text": "Delilah Warren",
@@ -7992,7 +8349,8 @@
             "Nova will be mad but there is no negative effect... this time at least."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Делайла Уоррен"
         }
       ]
     },
@@ -8139,7 +8497,8 @@
             "Gemini and Baek die"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Харли Джонс, наемная убийца"
         },
         {
           "text": "Anna Piaget, the psychologist",
@@ -8147,7 +8506,8 @@
             "Gemini and Baek die"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Анна Пиаже, психолог"
         },
         {
           "text": "Gemini, the psychic",
@@ -8155,7 +8515,8 @@
             "Gemini dies. Baek survives though, which allows you get 120 eternals from her later (6.6.10)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Гемини, экстрасенс"
         },
         {
           "text": "Sister Baek, the medium",
@@ -8163,7 +8524,8 @@
             "Baek dies"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сестра Баек, медиум"
         },
         {
           "text": "Delilah Warren",
@@ -8171,7 +8533,8 @@
             "Gemini and Baek die"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Делайла Уоррен"
         }
       ]
     },
@@ -8266,13 +8629,15 @@
             "Required to solve the mystery (6.8.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Довериться и позволить ей расследовать"
         },
         {
           "text": "Ask her to turn back to normal",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Попросить ее вернуться в нормальное состояние"
         }
       ]
     },
@@ -8342,7 +8707,8 @@
           "text": "Don’t pat her head",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не делать этого"
         }
       ]
     },
@@ -8384,7 +8750,8 @@
             "Этерналы +100"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "По рукам"
         },
         {
           "text": "I want more",
@@ -8392,13 +8759,15 @@
             "Этерналы +120"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Надавить на нее"
         },
         {
           "text": "I don’t want your money",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отказаться от денег"
         }
       ]
     },
@@ -8454,25 +8823,29 @@
           "text": "Harley Jones, the hitwoman",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Харли Джонс, наемная убийца"
         },
         {
           "text": "Anna Piaget, the psychologist",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Анна Пиаже, психолог"
         },
         {
           "text": "Gemini, the psychic",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Гемини, экстрасенс"
         },
         {
           "text": "Sister Baek, the medium",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сестра Баек, медиум"
         },
         {
           "text": "Delilah Warren",
@@ -8480,7 +8853,8 @@
             "потеря ветки (Нова) Everyone dies, including you. If you have the Amulet of Blair (5.1.1) there’s a special scene, but the consequences are basically the same. Skip to 6.11"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Делайла Уоррен"
         }
       ]
     },
@@ -8536,25 +8910,29 @@
           "text": "Harley Jones, the hitwoman",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Харли Джонс, наемная убийца"
         },
         {
           "text": "Anna Piaget, the psychologist",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Анна Пиаже, психолог"
         },
         {
           "text": "Gemini, the psychic",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Гемини, экстрасенс"
         },
         {
           "text": "Sister Baek, the medium",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сестра Баек, медиум"
         },
         {
           "text": "Delilah Warren",
@@ -8562,7 +8940,8 @@
             "потеря ветки (Нова) Everyone dies, including you. If you have the Amulet of Blair (5.1.1) there’s a special scene, but the consequences are basically the same. Skip to 6.11"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Делайла Уоррен"
         }
       ]
     },
@@ -8636,7 +9015,8 @@
             "The dev said that the artifact will be used in a future lewd, though this is not in the game yet."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Артефакт"
         },
         {
           "text": "50 eternals",
@@ -8644,7 +9024,8 @@
             "Этерналы +50"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "50 этерналов"
         }
       ]
     },
@@ -8706,19 +9087,22 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Моя настоящая семья в Кредоне"
         },
         {
           "text": "I prefer not to talk about it",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я предпочитаю не говорить об этом"
         },
         {
           "text": "You know dads can be real assholes",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отцы могут быть настоящими засранцами"
         }
       ]
     },
@@ -8802,7 +9186,8 @@
             "Этерналы -75, Dalia will appreciate any gift, but if you pick one of the other two options she’ll feed you one of her cinnamon rolls in return."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Капуста"
         },
         {
           "text": "Cookies and cream",
@@ -8810,7 +9195,8 @@
             "Этерналы -66"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Печенье и крем"
         },
         {
           "text": "Barbecue",
@@ -8818,13 +9204,15 @@
             "Этерналы -71, Dalia +1 later (8.11.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Барбекю"
         },
         {
           "text": "Don’t buy her anything",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не покупать ничего"
         }
       ]
     },
@@ -8878,7 +9266,8 @@
           "text": "Get some meds and blankets and visit her anyway",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Взять лекарства и одеяла и навестить ее в любом случае"
         },
         {
           "text": "Forget it and go home",
@@ -8886,7 +9275,8 @@
             "You’ll lose Alex’s path later (6.11.7)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Забудь и иди домой"
         }
       ]
     },
@@ -8919,7 +9309,8 @@
           "text": "Don’t lend him money",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не одалживать ему денег"
         }
       ]
     },
@@ -8950,7 +9341,8 @@
           "text": "Haha come on, stop fooling around",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хаха, да ладно, хватит дурачиться"
         },
         {
           "text": "She looks so pretty",
@@ -8986,13 +9378,15 @@
             "You trade information and Axel will later request another meeting (9.8.3)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Рассказать ему"
         },
         {
           "text": "Tell him to fuck off",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Пусть отвалит"
         }
       ]
     },
@@ -9064,19 +9458,22 @@
           "text": "Coke",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Колу"
         },
         {
           "text": "Coffee",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Кофе"
         },
         {
           "text": "Tea",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Чай"
         }
       ]
     },
@@ -9207,7 +9604,8 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Остаться и защитить принцессу"
         },
         {
           "text": "Leave",
@@ -9235,7 +9633,8 @@
             "Advance to 6.17"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Подразнить ее"
         },
         {
           "text": "Let it go",
@@ -9243,7 +9642,8 @@
             "потеря ветки (Калипсо), return to the map: 6.14"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не делать этого"
         }
       ]
     },
@@ -9290,7 +9690,8 @@
           "text": "Punch me",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ударь меня"
         },
         {
           "text": "Kiss me",
@@ -9298,7 +9699,8 @@
             "Алекс +1 if ветка Алекс активна"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Поцелуй меня"
         }
       ]
     },
@@ -9325,7 +9727,8 @@
               "alex",
               2
             ]
-          ]
+          ],
+          "ru": "Убить его"
         },
         {
           "text": "Take the money and let him go",
@@ -9333,7 +9736,8 @@
             "Этерналы +500"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Взять деньги и отпустить его"
         },
         {
           "kind": "note",
@@ -9376,7 +9780,8 @@
             "Skip to 6.22"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Остаться в городе"
         }
       ]
     },
@@ -9514,7 +9919,8 @@
             "потеря ветки (Далия), the scene ends immediately, skip to 6.22"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Войти в нее"
         }
       ]
     },
@@ -9568,13 +9974,15 @@
           "text": "Can I stay over?",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Можно я останусь у тебя?"
         },
         {
           "text": "You look so pretty tonight",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ты сегодня такая красивая"
         },
         {
           "text": "I loved playing with you",
@@ -9588,7 +9996,8 @@
               "alex",
               1
             ]
-          ]
+          ],
+          "ru": "Мне понравилось играть с тобой"
         }
       ]
     },
@@ -9614,7 +10023,8 @@
             "потеря ветки (Алекс), skip to 7.1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Спать"
         }
       ]
     },
@@ -9699,7 +10109,8 @@
           "text": "Leave her alone",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Оставить ее в одиночестве"
         },
         {
           "text": "Hug her",
@@ -9831,7 +10242,8 @@
             "Луна +1 (delayed)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Горячий шоколад"
         },
         {
           "kind": "note",
@@ -9855,7 +10267,8 @@
           "text": "Is that all?",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "И это все?"
         },
         {
           "text": "Cool",
@@ -9869,7 +10282,8 @@
             "Луна +1 if ветка Луна активна"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Расскажи мне больше"
         }
       ]
     },
@@ -9901,13 +10315,15 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Взять ее за руку"
         },
         {
           "text": "Don’t grab her hand",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не брать за руку"
         }
       ]
     },
@@ -10013,7 +10429,8 @@
           "text": "I was bored",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Мне стало скучно"
         },
         {
           "text": "I missed you",
@@ -10027,13 +10444,15 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Я скучал по тебе"
         },
         {
           "text": "I thought you’d need the help",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я подумал, что тебе понадобится помощь"
         }
       ]
     },
@@ -10085,7 +10504,8 @@
             "Луна +1 if ветка Луна активна"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не впутывать в это Луну"
         },
         {
           "text": "Refuse",
@@ -10131,7 +10551,8 @@
             "Later on, the hunters will become your allies (7.8.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Принять сторону охотников"
         },
         {
           "text": "Side with the werewolves",
@@ -10139,7 +10560,8 @@
             "Later on, the vampires & werewolves will become your allies (7.8.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Принять сторону оборотней"
         },
         {
           "kind": "note",
@@ -10197,7 +10619,8 @@
           "text": "Had the photo session",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ходили на фотосессию вместе"
         },
         {
           "text": "Used the Reminiscecombobulator",
@@ -10212,13 +10635,15 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Использовали Ремини 3000"
         },
         {
           "text": "Went to Regina’s room",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Проникли в комнату Регины"
         }
       ]
     },
@@ -10266,7 +10691,8 @@
           "text": "She’s not my wife",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Она не моя жена"
         },
         {
           "text": "She’s not my wife, yet",
@@ -10280,7 +10706,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Пока что она не моя жена"
         }
       ]
     },
@@ -10320,7 +10747,8 @@
             "Later on, the hunters will become your allies (7.8.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Принять сторону охотников"
         },
         {
           "text": "Side with the vampires",
@@ -10328,7 +10756,8 @@
             "Later on, the vampires & werewolves will become your allies (7.8.1)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Принять сторону вампиров"
         },
         {
           "kind": "note",
@@ -10397,7 +10826,8 @@
           "text": "The old barn",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Старый сарай"
         },
         {
           "text": "The windmill",
@@ -10405,7 +10835,8 @@
             "потеря ветки (Луна), skip to 7.8"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ветряная мельница"
         },
         {
           "text": "The church",
@@ -10413,7 +10844,8 @@
             "потеря ветки (Луна), skip to 7.8"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Церковь"
         }
       ]
     },
@@ -10431,7 +10863,8 @@
           "text": "Stay with her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Остаться с ней"
         },
         {
           "text": "Leave",
@@ -10564,7 +10997,8 @@
           "text": "I’m trying",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я пытаюсь..."
         },
         {
           "kind": "note",
@@ -10605,7 +11039,8 @@
               "chang",
               1
             ]
-          ]
+          ],
+          "ru": "Конечно"
         },
         {
           "text": "Don’t ask her on a date yet",
@@ -10651,13 +11086,15 @@
             "Unlocks mini lewd with Penny and Penny +1 later (7.11)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Продолжить тему с трусиками"
         },
         {
           "text": "Nevermind",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Просто подождать"
         }
       ]
     },
@@ -10684,7 +11121,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Стать жестким"
         },
         {
           "text": "Bribe her",
@@ -10693,13 +11131,15 @@
             "Этерналы -150"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Подкупить ее"
         },
         {
           "text": "Be nice",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Быть вежливым"
         }
       ]
     },
@@ -10748,19 +11188,22 @@
           "text": "Leaning over the hood",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Наклонившись над капотом"
         },
         {
           "text": "Lying on the hood",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Лежа на капоте"
         },
         {
           "text": "Spread out in front of the hood",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Перед бампером"
         }
       ]
     },
@@ -10776,13 +11219,15 @@
           "text": "Be nice",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Быть вежливым"
         },
         {
           "text": "Be rude",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Быть грубым"
         }
       ]
     },
@@ -10875,7 +11320,8 @@
           "text": "Cool! Have a good training!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Круто! Удачной тренировки!"
         },
         {
           "text": "Dalia’s on a mission to transform us into the fittest squad ever",
@@ -10923,7 +11369,8 @@
           "text": "Maybe it’s better if we talk about this face to face",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Может, будет лучше, если мы поговорим об этом лицом к лицу"
         },
         {
           "text": "Not for a moment",
@@ -11035,13 +11482,15 @@
             "Maximo gets killed, skip to 7.15.3"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не слушать его"
         },
         {
           "text": "Negotiate",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Вести переговоры"
         }
       ]
     },
@@ -11131,7 +11580,8 @@
             "Only succeeds if you have sufficient funds. If you do: Этерналы -999"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Купить Оборотное Зелье"
         },
         {
           "text": "Don’t buy it",
@@ -11173,7 +11623,8 @@
           "text": "Prove to her you care about her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Доказать ей, что она тебе небезразлична"
         },
         {
           "text": "I’m craving for pizza",
@@ -11181,7 +11632,8 @@
             "потеря ветки (Нова), skip to 7.18"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я хочу пиццу"
         }
       ]
     },
@@ -11252,7 +11704,8 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Проводить ее в трактир"
         },
         {
           "text": "Go to the Exit Portal",
@@ -11260,7 +11713,8 @@
             "потеря ветки (Калипсо)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Идти к Порталу Выхода"
         }
       ]
     },
@@ -11384,7 +11838,8 @@
           "text": "Buy a painting from Morty",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Купить картину Морти"
         },
         {
           "text": "Offer 150 eternals",
@@ -11393,13 +11848,15 @@
             "Этерналы -150"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Предложить 150 этерналов"
         },
         {
           "text": "Threaten them",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Угрожать им"
         }
       ]
     },
@@ -11437,7 +11894,8 @@
           "text": "Swim with her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Поплавать с ней"
         }
       ]
     },
@@ -11604,7 +12062,8 @@
               "nova",
               1
             ]
-          ]
+          ],
+          "ru": "Собака"
         },
         {
           "text": "Books",
@@ -11618,13 +12077,15 @@
               "nancy",
               1
             ]
-          ]
+          ],
+          "ru": "Книги"
         },
         {
           "text": "Porn magazines",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Порножурналы"
         }
       ]
     },
@@ -11642,7 +12103,8 @@
           "text": "What would you buy with 1M dollars?",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Что бы вы купили на 1 миллион долларов?"
         },
         {
           "text": "Have you ever been arrested?",
@@ -11650,7 +12112,8 @@
             "Includes a picture of Nancy as a teenager."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Вас когда-нибудь арестовывали?"
         }
       ]
     },
@@ -11672,13 +12135,15 @@
           "text": "Watching",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Смотреть"
         },
         {
           "text": "Being watched",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Чтобы за мной смотрели"
         }
       ]
     },
@@ -11694,7 +12159,8 @@
           "text": "Have you ever caught a family member in the act?",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Вы когда-нибудь ловили члена семьи за непотребствами?"
         },
         {
           "text": "What’s your favorite position?",
@@ -11702,7 +12168,8 @@
             "This won’t change the following lewd scene, it always has their favorite positions."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Какая ваша любимая поза?"
         }
       ]
     },
@@ -11730,7 +12197,8 @@
             "Skip to 8.6"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Это сложно"
         }
       ]
     },
@@ -11768,13 +12236,15 @@
           "text": "Finish with Nova",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Кончить с Новой"
         },
         {
           "text": "Finish with Nancy",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Кончить с Нэнси"
         }
       ]
     },
@@ -11818,7 +12288,8 @@
           "text": "Let her calm",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Дать ей успокоиться"
         }
       ]
     },
@@ -11856,7 +12327,8 @@
           "text": "Keep your gaze forward like a gentleman",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Смотри вперед, как джентльмен"
         },
         {
           "text": "Look at their butts",
@@ -11878,13 +12350,15 @@
           "text": "The Red Herring",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Красная селедка"
         },
         {
           "text": "Ion",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Ион"
         }
       ]
     },
@@ -11920,13 +12394,15 @@
           "text": "What happened???",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Что случилось???"
         },
         {
           "text": "Hmm? You forgot about our dinner?",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "А? Ты забыла про наш ужин?"
         },
         {
           "text": "I’m gonna be late",
@@ -11986,7 +12462,8 @@
           "text": "Lmao sure bro, all yours",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Лол, конечно, бро, они все в твоем распоряжении"
         },
         {
           "kind": "note",
@@ -12071,7 +12548,8 @@
           "text": "Oh no! Do you have after-sun?",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "О нет! У тебя есть средство после загара?"
         },
         {
           "text": "But I’ll have to go sunbathing to get rid of the tan lines anyway... so boring",
@@ -12150,7 +12628,8 @@
           "text": "Reject",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Отказаться"
         }
       ]
     },
@@ -12168,7 +12647,8 @@
             "Skip to 8.9.4"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Джинсовый комбинезон поверх футболки в радужную полоску"
         },
         {
           "text": "A pink hoodie paired with leggings",
@@ -12176,13 +12656,15 @@
             "Skip to 8.9.4"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Розовая толстовка с капюшоном в паре с леггинсами"
         },
         {
           "text": "An orange shirt tucked into a skirt with suspenders",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Оранжевая футболка, заправленная в юбку с подтяжками."
         }
       ]
     },
@@ -12200,7 +12682,8 @@
           "text": "To the movie theater",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "В кинотеатр"
         },
         {
           "text": "To see the pandas at the zoo",
@@ -12214,13 +12697,15 @@
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "Посмотреть на панд в зоопарке"
         },
         {
           "text": "To play mini golf",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Поиграть в мини-гольф"
         }
       ]
     },
@@ -12339,7 +12824,8 @@
           "text": "Throw her onto the bed",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Бросить ее на кровать"
         }
       ]
     },
@@ -12357,7 +12843,8 @@
           "text": "Continue the foreplay",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Продолжить прелюдию"
         },
         {
           "text": "Fuck her",
@@ -12365,7 +12852,8 @@
             "Annie won’t be wet enough and unable to take you. Fails the scene, skip to 8.11"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Трахнуть ее"
         }
       ]
     },
@@ -12383,7 +12871,8 @@
           "text": "Continue the foreplay",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Продолжить прелюдию"
         },
         {
           "text": "Fuck her",
@@ -12391,7 +12880,8 @@
             "Annie won’t be wet enough and unable to take you. Fails the scene, skip to 8.11"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Трахнуть ее"
         }
       ]
     },
@@ -12419,7 +12909,8 @@
             "After some cuddling you’ll go for round two, where Annie will beg you for a creampie."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Вытащить"
         }
       ]
     },
@@ -12500,13 +12991,15 @@
               "alex",
               1
             ]
-          ]
+          ],
+          "ru": "Это потрясающе!"
         },
         {
           "text": "Panic",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Паниковать"
         }
       ]
     },
@@ -12536,7 +13029,8 @@
           "text": "SORRY! I’M ON MY WAY!!!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "ИЗВИНИ! Я УЖЕ В ПУТИ!!!"
         },
         {
           "kind": "note",
@@ -12569,13 +13063,15 @@
             "You’ll later have a chance to befriend Jerry (8.19.5)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Поговорить с Джерри"
         },
         {
           "text": "Ignore him",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Игнорировать его"
         }
       ]
     },
@@ -12638,7 +13134,8 @@
             "Этерналы -3"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Купить"
         },
         {
           "text": "Don’t buy it",
@@ -12702,7 +13199,8 @@
             "Этерналы -80"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Дать ей 80 этерналов"
         },
         {
           "text": "Refuse",
@@ -12801,13 +13299,15 @@
           "text": "Kill her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Убить ее"
         },
         {
           "text": "Let her go",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Отпустить ее"
         }
       ]
     },
@@ -12831,7 +13331,8 @@
             "Jerry becomes your friend!"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Спасти Джерри"
         },
         {
           "text": "Ignore his cries for help",
@@ -12839,7 +13340,8 @@
             "Jerry gets killed"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не обращай внимания на его крики о помощи"
         }
       ]
     },
@@ -12877,13 +13379,15 @@
             "потеря ветки (Далия), skips the lewd scene; skip to 9.1"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Мне нравится проводить с тобой время"
         },
         {
           "text": "Of course I like you",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Конечно, ты мне нравишься"
         },
         {
           "text": "I love you",
@@ -12897,7 +13401,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Я люблю тебя"
         },
         {
           "kind": "note",
@@ -12944,7 +13449,8 @@
           "text": "Kneel and grab some food",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Преклонить колени и взять еду"
         },
         {
           "text": "Refuse",
@@ -12958,7 +13464,8 @@
             "This will fail and it will make the trial harder (9.1.15)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Напасть на него и сбежать"
         }
       ]
     },
@@ -13427,19 +13934,22 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Она много значит для меня"
         },
         {
           "text": "I owe it to her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я обязан ей многим"
         },
         {
           "text": "I have great respect for royalty",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я очень уважаю королевскую семью"
         }
       ]
     },
@@ -13455,13 +13965,15 @@
           "text": "The door opens",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Дверь откроется"
         },
         {
           "text": "The door stays closed",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Дверь останется закрытой"
         }
       ]
     },
@@ -13488,13 +14000,15 @@
             "Arannis will be nicer to you, though it doesn’t change the story."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Принять его извинения"
         },
         {
           "text": "Don’t accept his apology",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не принимать его извинения"
         }
       ]
     },
@@ -13526,7 +14040,8 @@
           "text": "Don’t hug her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не обнимать"
         }
       ]
     },
@@ -13550,7 +14065,8 @@
           "text": "How’s Lorelei?",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Как Лорелея?"
         },
         {
           "text": "Are you alright?",
@@ -13558,19 +14074,22 @@
             "If you ask this before you ask about Lorelei or about going back to Earth: Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Ты в полном порядке?"
         },
         {
           "text": "Where exactly are we now?",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Где именно мы сейчас?"
         },
         {
           "text": "I need to go back to Earth!",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Мне нужно вернуться на Землю!"
         }
       ]
     },
@@ -13626,7 +14145,8 @@
           "text": "Dig deeper",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Копать глубже"
         },
         {
           "text": "Let it go",
@@ -13654,7 +14174,8 @@
             "потеря ветки (Калипсо)"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Молчать"
         },
         {
           "text": "Hug her",
@@ -13670,7 +14191,8 @@
             "If ветка Калипсо активна and 5, then you succeed. Otherwise: потеря ветки (Калипсо)"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Попросить разрешения обнять ее"
         }
       ]
     },
@@ -13734,13 +14256,15 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Помахать ей"
         },
         {
           "text": "Ignore her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Игнорировать ее"
         }
       ]
     },
@@ -13756,7 +14280,8 @@
           "text": "Tralalero tralala",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Тралалеро Тралала"
         },
         {
           "text": "My hands shook hard, her eyes were bright",
@@ -13764,19 +14289,22 @@
             "It’s the only good line"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Дрожат мои запястья, но блестят ее глаза"
         },
         {
           "text": "I tried to flirt, she barked ”Alright”",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Я глупо флиртовал, и «Ладно» рявкнула она"
         },
         {
           "text": "Her teeth are bright like white moon night",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сверкали ее зубы, как полночная луна"
         }
       ]
     },
@@ -13794,19 +14322,22 @@
           "text": "O porcodioe o porcuala",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "О поркуади, о поркуала"
         },
         {
           "text": "But I am dust, and she is grace",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ведь я всего лишь пыль, а она божья благодать"
         },
         {
           "text": "Let’s go watch Better Call Saul",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Давай посмотрим вместе «Ходячих мертвецов»"
         },
         {
           "text": "Enough to make a soldier fall",
@@ -13814,7 +14345,8 @@
             "If the second line was good too: Калипсо +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "И воин пал, ведь стать ее опаснее клинков"
         }
       ]
     },
@@ -13840,19 +14372,22 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Калипсо"
         },
         {
           "text": "A horse",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Лошадь"
         },
         {
           "text": "General Arannis",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Генерал Араннис"
         }
       ]
     },
@@ -13886,7 +14421,8 @@
           "text": "Activate your powers",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Активировать свою силу"
         },
         {
           "text": "Don’t activate it",
@@ -13900,7 +14436,8 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Не активировать"
         }
       ]
     },
@@ -14058,7 +14595,8 @@
           "text": "Urge her",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Поторопить ее"
         },
         {
           "text": "Quote Arannis’ words",
@@ -14072,7 +14610,8 @@
               "calypso",
               1
             ]
-          ]
+          ],
+          "ru": "Процитировать слова Аранниса"
         }
       ]
     },
@@ -14090,19 +14629,22 @@
           "text": "Vael’Thalas Hold",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Крепость Ваэль'Талас"
         },
         {
           "text": "Andor Vale",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Долина Андор"
         },
         {
           "text": "Thalorin Enclave",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Анклав Талорин"
         }
       ]
     },
@@ -14120,19 +14662,22 @@
           "text": "Ysion",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Йсьон"
         },
         {
           "text": "Redveil",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Редвейл"
         },
         {
           "text": "Thirinvale",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Тиринвейл"
         }
       ]
     },
@@ -14211,13 +14756,15 @@
           "text": "Give him full details",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Предоставить полную информацию"
         },
         {
           "text": "Give him the short version",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Предоставить краткую версию"
         }
       ]
     },
@@ -14303,13 +14850,15 @@
           "text": "Yeahh but I walked off a bit to grab wood for the fire",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Да, но я отошел, чтобы наколоть дров для костра."
         },
         {
           "text": "It looks a bit blurry lol",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": false,
+          "ru": "Выглядит немного размыто, лол"
         },
         {
           "text": "I LOVE IT!",
@@ -14345,13 +14894,15 @@
             "It’s Axel. He will schedule a meeting with you. You’ll discuss this with the girls later."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Ответить"
         },
         {
           "text": "Hang up",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Повесить трубку"
         }
       ]
     },
@@ -14375,7 +14926,8 @@
           "text": "Raul and Noah",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Рауль и Ной"
         },
         {
           "text": "Mr. Valentino",
@@ -14390,7 +14942,8 @@
               "penny",
               1
             ]
-          ]
+          ],
+          "ru": "Мистер Валентино"
         }
       ]
     },
@@ -14426,7 +14979,8 @@
           "text": "Accept and go with her",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Согласиться и пойти с ней"
         },
         {
           "text": "Stay here",
@@ -14434,7 +14988,8 @@
             "Forfeits the opportunity for a lewd with Penny later (9.9.7). Also, she’ll make you come upstairs with her anyway; you’re not getting out of what happens next."
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Остаться здесь"
         }
       ]
     },
@@ -14538,7 +15093,8 @@
             "потеря ветки (Пенни) потеря ветки (Гарем), skip to 9.11"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Нет (Правда)"
         },
         {
           "text": "No (Lie)",
@@ -14546,7 +15102,8 @@
             "потеря ветки (Пенни) потеря ветки (Гарем), skip to 9.11"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Нет (Ложь)"
         }
       ]
     },
@@ -14686,7 +15243,8 @@
             "You can choose ”master”, ”daddy”, or another nickname you type in yourself."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сказать ей называть тебя по-другому"
         },
         {
           "text": "No nickname",
@@ -14694,7 +15252,8 @@
             "Penny will use your first name."
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Без прозвища"
         }
       ]
     },
@@ -14714,7 +15273,8 @@
             "Extra looping spanking animation"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Отшлепать ее"
         },
         {
           "text": "Fuck her",
@@ -14740,13 +15300,15 @@
             "Extends the lewd scene with anal sex"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Заняться анальным сексом с Пенни"
         },
         {
           "text": "End it here",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Закончить на этом"
         }
       ]
     },
@@ -14779,13 +15341,15 @@
           "text": "Awful",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ужасно"
         },
         {
           "text": "Not bad",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Неплохо"
         },
         {
           "text": "Incredible",
@@ -14799,7 +15363,8 @@
               "dalia",
               1
             ]
-          ]
+          ],
+          "ru": "Невероятно"
         }
       ]
     },
@@ -15233,7 +15798,8 @@
             "Skip to 9.14"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Орел (Победа за тобой)"
         },
         {
           "text": "Tails (Dalia wins)",
@@ -15241,7 +15807,8 @@
             "You unlock the following lewd scene"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Решка (Победа за Далией)"
         }
       ]
     },
@@ -15293,7 +15860,8 @@
             "Interview points +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Не прав"
         }
       ]
     },
@@ -15311,13 +15879,15 @@
             "Interview points +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Сорок минут"
         },
         {
           "text": "A hundred minutes",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Сто минут"
         }
       ]
     },
@@ -15333,13 +15903,15 @@
           "text": "Whiskey",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Виски"
         },
         {
           "text": "Brandy",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Бренди"
         },
         {
           "text": "No thanks",
@@ -15347,7 +15919,8 @@
             "Interview points +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Спасибо, не надо"
         }
       ]
     },
@@ -15365,7 +15938,8 @@
             "Interview points +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Деньги"
         },
         {
           "text": "Reputation",
@@ -15373,13 +15947,15 @@
             "Interview points +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Репутация"
         },
         {
           "text": "Helping the world",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Помощь миру"
         }
       ]
     },
@@ -15419,7 +15995,8 @@
           "text": "He’s the best",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Он лучший"
         },
         {
           "text": "He’s horrible",
@@ -15427,7 +16004,8 @@
             "Interview points +1"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Он ужасен"
         }
       ]
     },
@@ -15505,13 +16083,15 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Сними их"
         },
         {
           "text": "Keep them on",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Оставь их"
         }
       ]
     },
@@ -15544,7 +16124,8 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Купить что-нибудь для Луны"
         },
         {
           "text": "Pass",
@@ -15594,13 +16175,15 @@
               "luna",
               1
             ]
-          ]
+          ],
+          "ru": "Взять ее за руку"
         },
         {
           "text": "Don’t do it",
           "notes": [],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Не делать этого"
         }
       ]
     },
@@ -15620,13 +16203,15 @@
             "Skip to 9.15.7"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Давай забудем об этом"
         },
         {
           "text": "Try to stop the vision from happening",
           "notes": [],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Постараться остановить видение"
         },
         {
           "text": "Call the police",
@@ -15634,7 +16219,8 @@
             "Skip to 9.15.7"
           ],
           "kind": "option",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вызвать полицию"
         }
       ]
     },
@@ -15720,7 +16306,8 @@
             "Prolongs the scene"
           ],
           "kind": "option",
-          "ideal": true
+          "ideal": true,
+          "ru": "Второй раунд"
         },
         {
           "text": "Stop here",
