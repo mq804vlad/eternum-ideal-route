@@ -7,7 +7,7 @@
     if (!response.ok) throw new Error(`Could not load ${path}: ${response.status}`);
     return response.json();
   };
-  const [db, translations] = await Promise.all([loadJson('./guide.json'), loadJson('./translations.json')]);
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=6e703fa09aae'), loadJson('./translations.json?v=bb84587f5b57')]);
   let language = 'ru';
   try {
     if (localStorage.getItem('eternum-route-language') === 'en') language = 'en';
