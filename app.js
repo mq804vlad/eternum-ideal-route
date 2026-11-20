@@ -302,6 +302,7 @@
   };
 
   function localizeInterface() {
+    renderWakeLock();
     document.documentElement.lang = language;
     for (const element of document.querySelectorAll('[data-en]')) {
       element.textContent = t(element.dataset.ru, element.dataset.en);
@@ -375,6 +376,72 @@
     setOpen(node, !(animations.get(node)?.open ?? node.open));
   });
 
+  const wakeButton = $('wakeButton');
+  const wakeStatus = $('wakeStatus');
+  const wakeKey = 'eternum-route-keep-screen-on';
+  let keepScreenOn = false;
+  let wakeLock;
+  let wakeRequestPending = false;
+  let wakeStatusTimer;
+
+  try {
+    keepScreenOn = localStorage.getItem(wakeKey) === 'true';
+  } catch {}
+
+  function renderWakeLock() {
+    const title = t('Не гасить экран', 'Keep screen on');
+    wakeButton.setAttribute('aria-label', title);
+    wakeButton.title = title;
+    wakeButton.setAttribute('aria-pressed', String(!!wakeLock && !wakeLock.released));
+  }
+
+  function reportWakeStatus(text) {
+    clearTimeout(wakeStatusTimer);
+    wakeStatus.textContent = text;
+    wakeStatusTimer = setTimeout(() => { wakeStatus.textContent = ''; }, 4000);
+  }
+
+  async function requestWakeLock(interactive = false) {
+    if (!keepScreenOn || document.visibilityState !== 'visible' || wakeRequestPending || (wakeLock && !wakeLock.released)) return;
+    wakeRequestPending = true;
+    try {
+      const lock = await navigator.wakeLock.request('screen');
+      if (!keepScreenOn || document.visibilityState !== 'visible') {
+        await lock.release();
+        return;
+      }
+      wakeLock = lock;
+      lock.addEventListener('release', () => {
+        if (wakeLock === lock) wakeLock = undefined;
+        renderWakeLock();
+      }, {once: true});
+      renderWakeLock();
+      if (interactive) reportWakeStatus(t('Экран останется включённым', 'Screen will stay on'));
+    } catch {
+      if (interactive && keepScreenOn) reportWakeStatus(t('Браузер не разрешил удерживать экран включённым', 'The browser could not keep the screen on'));
+    } finally {
+      wakeRequestPending = false;
+    }
+  }
+
+  wakeButton.onclick = () => {
+    if (!navigator.wakeLock) {
+      reportWakeStatus(t('Этот браузер не поддерживает режим', 'This browser does not support keeping the screen on'));
+      return;
+    }
+    keepScreenOn = !(keepScreenOn && ((wakeLock && !wakeLock.released) || wakeRequestPending));
+    try { localStorage.setItem(wakeKey, String(keepScreenOn)); } catch {}
+    if (keepScreenOn) {
+      requestWakeLock(true);
+      return;
+    }
+    wakeLock?.release();
+    reportWakeStatus(t('Режим выключен', 'Keep screen on is off'));
+  };
+
+  document.addEventListener('visibilitychange', () => requestWakeLock());
+  window.addEventListener('pageshow', () => requestWakeLock());
+
   const scoresDialog = $('scoresDialog');
   $('scoresButton').onclick = () => {
     const profile = activeProfile();
@@ -412,6 +479,7 @@
     ? savedTarget || linkedTarget
     : linkedTarget || savedTarget;
   if (target) requestAnimationFrame(() => jump(target, true));
+  requestWakeLock();
 })().catch(error => {
   console.error(error);
   document.getElementById('profileOverlay').classList.add('hide');
