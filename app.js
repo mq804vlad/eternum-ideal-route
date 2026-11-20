@@ -17,7 +17,7 @@
   const t = (ru, en) => language === 'ru' ? ru : en;
   const message = text => translations.messages[text]?.[language === 'ru' ? 1 : 0] ?? text;
   const chapterTitle = chapter => t(chapter.title, translations.chapters[chapter.number - 1]);
-  const storageKey = 'eternum-route-profiles-v3';
+  const storageKey = 'eternum-route-progress-v1';
   const characterIds = ['annie', 'nancy', 'penny', 'dalia', 'luna', 'alex', 'nova', 'calypso'];
   const selection = new Set();
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({
@@ -25,11 +25,10 @@
   })[char]);
   const color = id => db.characters[id][1];
   const name = id => t(db.characters[id][0], translations.characters[id]);
-  const activeProfile = () => state.profiles.find(profile => profile.id === state.active);
   const entries = db.entries.filter(entry => entry.kind !== 'section');
   const entryMap = new Map(entries.map(entry => [entry.id, entry]));
   const isOption = block => block?.kind === 'option' || block?.kind === 'reply';
-  const isPassed = (entry, profile) => !!profile?.done?.[entry.id] || isOption(entry.blocks[profile?.choices?.[entry.id]]);
+  const isPassed = entry => !!progress.done[entry.id] || isOption(entry.blocks[progress.choices[entry.id]]);
   const displayedIds = new Set(db.entries.map(entry => entry.id));
   const chapters = db.chapters.map((title, index) => ({
     title,
@@ -37,11 +36,22 @@
     sections: new Map()
   }));
 
-  let state = {profiles: [], active: null};
-  try {
-    const saved = JSON.parse(localStorage.getItem(storageKey));
-    if (Array.isArray(saved?.profiles)) state = saved;
-  } catch {}
+  const progress = loadProgress();
+
+  function loadProgress() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey));
+      if (saved) return {done: saved.done || {}, choices: saved.choices || {}};
+      const legacy = JSON.parse(localStorage.getItem('eternum-route-profiles-v3'));
+      if (Array.isArray(legacy?.profiles) && legacy.profiles.length) {
+        const previous = legacy.profiles.find(profile => profile.id === legacy.active) || legacy.profiles[0];
+        const migrated = {done: previous.done || {}, choices: previous.choices || {}};
+        try { localStorage.setItem(storageKey, JSON.stringify(migrated)); } catch {}
+        return migrated;
+      }
+    } catch {}
+    return {done: {}, choices: {}};
+  }
 
   for (const entry of db.entries) {
     const chapter = chapters[entry.chapter - 1];
@@ -54,47 +64,19 @@
 
   function save() {
     try {
-      localStorage.setItem(storageKey, JSON.stringify(state));
+      localStorage.setItem(storageKey, JSON.stringify(progress));
     } catch {
       alert(t('Браузер запретил сохранять прогресс.', 'The browser blocked saving your progress.'));
     }
   }
 
-  function profileModal(open) {
-    $('profileOverlay').classList.toggle('hide', !open);
-    $('closeProfiles').disabled = !activeProfile();
-    if (!open) return;
-    $('profileList').innerHTML = state.profiles.map(profile => `
-      <div class="profileRow">
-        <span>${esc(profile.name)} <span class="muted">· ${entries.filter(entry => isPassed(entry, profile)).length} ${t('отмечено', 'marked')}</span></span>
-        <button data-switch="${esc(profile.id)}">${profile.id === state.active ? t('Текущий', 'Current') : t('Войти', 'Switch')}</button>
-      </div>`).join('');
-  }
-
-  function updateProfile() {
-    const profile = activeProfile();
-    $('profileName').textContent = profile?.name || t('Выбрать профиль', 'Choose a profile');
-    $('avatar').textContent = (profile?.name || '?').charAt(0).toUpperCase();
-    const passed = entries.filter(entry => isPassed(entry, profile)).length;
+  function updateProgress() {
+    const passed = entries.filter(isPassed).length;
     const percent = passed / entries.length * 100;
     $('counter').textContent = `${passed} / ${entries.length} ${t('пройдено', 'completed')}`;
     $('percent').textContent = `${Math.round(percent)}%`;
     $('progressFill').style.width = `${percent}%`;
   }
-
-  function setProfile(id) {
-    state.active = id;
-    save();
-    profileModal(false);
-    updateProfile();
-    for (const button of $('results').querySelectorAll('[data-choice]')) {
-      refreshChoice(button);
-    }
-    for (const button of $('results').querySelectorAll('[data-done]')) {
-      updateDoneButton(button, !!activeProfile()?.done?.[button.dataset.done]);
-    }
-  }
-
   function updateDoneButton(button, done) {
     button.textContent = done ? t('✓ Пройдено', '✓ Completed') : t('○ Отметить', '○ Mark done');
     button.classList.toggle('done', done);
@@ -108,7 +90,7 @@
   }
 
   function refreshChoice(button) {
-    const selected = activeProfile()?.choices?.[button.dataset.choice] === Number(button.dataset.option);
+    const selected = progress.choices[button.dataset.choice] === Number(button.dataset.option);
     button.setAttribute('aria-pressed', String(selected));
     button.closest('.choice').classList.toggle('picked', selected);
   }
@@ -119,7 +101,7 @@
       const text = linkReferences(blockText).replaceAll('\n', '<br>');
       if (block.kind === 'note') return `<div class="route-note">${text}</div>`;
       const selectable = entry.kind !== 'section' && isOption(block);
-      const picked = selectable && activeProfile()?.choices?.[entry.id] === index;
+      const picked = selectable && progress.choices[entry.id] === index;
       return `<div class="choice ${block.ideal ? 'ideal' : ''} ${block.kind !== 'option' ? 'route-dialogue' : ''} ${picked ? 'picked' : ''}">
         ${block.ideal ? `<span class="recommend" role="img" aria-label="${t('Рекомендуемый вариант', 'Recommended choice')}">◆</span>` : ''}${text}
         ${block.notes.map(note => `<p class="choice-note">${linkReferences(message(note))}</p>`).join('')}
@@ -131,7 +113,7 @@
   function makeCard(entry) {
     const colors = entry.characters.map(color);
     const stripe = colors.length ? `linear-gradient(90deg,${colors.map((c,i) => `${c} ${i*100/colors.length}% ${100*(i+1)/colors.length}%`).join(',')})` : 'linear-gradient(90deg,#2d506e,#4da4be)';
-    const done = !!activeProfile()?.done?.[entry.id];
+    const done = !!progress.done[entry.id];
     return `<article class="card ${colors.length ? 'hascolor' : ''}" style="--stripe:${stripe};--neon:${colors[0] || '#5d9dff'}" id="route-${entry.id}">
       <div class="cardHeader"><span class="code">${entry.id}</span><span class="cardMeta">PDF · ${t('стр.', 'p.')} ${entry.page}</span></div>
       <h4 class="cardTitle">${esc(message(entry.title || entry.id))}</h4>
@@ -249,51 +231,30 @@
       jump(target);
       return;
     }
-    const profile = activeProfile();
-    if (!profile) return;
     const choice = event.target.closest('[data-choice]');
     if (choice) {
       const {choice: id, option} = choice.dataset;
       const index = Number(option);
-      profile.choices ||= {};
-      const wasSelected = profile.choices[id] === index;
-      delete profile.choices[id];
-      if (!wasSelected) profile.choices[id] = index;
-      if (profile.done) delete profile.done[id];
+      const wasSelected = progress.choices[id] === index;
+      delete progress.choices[id];
+      if (!wasSelected) progress.choices[id] = index;
+      delete progress.done[id];
       save();
       for (const button of choice.closest('.card').querySelectorAll('[data-choice]')) refreshChoice(button);
-      updateProfile();
+      updateProgress();
       return;
     }
     const button = event.target.closest('[data-done]');
     if (!button) return;
-    profile.done ||= {};
     const id = button.dataset.done;
-    profile.done[id] = !profile.done[id];
+    progress.done[id] = !progress.done[id];
     save();
-    updateDoneButton(button, profile.done[id]);
-    updateProfile();
+    updateDoneButton(button, progress.done[id]);
+    updateProgress();
   };
 
-  $('profileBtn').onclick = () => profileModal(true);
-  $('closeProfiles').onclick = () => {
-    profileModal(false);
-  };
-  $('profileList').onclick = event => {
-    const button = event.target.closest('[data-switch]');
-    if (button) setProfile(button.dataset.switch);
-  };
-  $('profileForm').onsubmit = event => {
-    event.preventDefault();
-    const profileName = $('newName').value.trim();
-    if (!profileName) return;
-    const id = Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
-    state.profiles.push({id, name: profileName, done: {}});
-    $('newName').value = '';
-    setProfile(id);
-  };
   $('exportProgress').onclick = () => {
-    const blob = new Blob([JSON.stringify(state, null, 2)], {type: 'application/json'});
+    const blob = new Blob([JSON.stringify(progress, null, 2)], {type: 'application/json'});
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
     link.download = 'eternum-progress.json';
@@ -310,7 +271,6 @@
     for (const element of document.querySelectorAll('[data-en-label]')) {
       element.setAttribute('aria-label', t(element.dataset.ruLabel, element.dataset.enLabel));
     }
-    $('newName').placeholder = t('Имя профиля, например MQ804', 'Profile name, e.g. MQ804');
     for (const select of document.querySelectorAll('[data-language]')) select.value = language;
   }
 
@@ -328,8 +288,7 @@
     renderGuide();
     for (const id of openIds) $(id).open = true;
     $('chapter-1').open = openIds.includes('chapter-1');
-    updateProfile();
-    profileModal(!$('profileOverlay').classList.contains('hide'));
+    updateProgress();
     applyFilter();
     if (anchorId && $(anchorId)) window.scrollBy(0, $(anchorId).getBoundingClientRect().top - offset);
   }
@@ -444,17 +403,14 @@
 
   const scoresDialog = $('scoresDialog');
   $('scoresButton').onclick = () => {
-    const profile = activeProfile();
-    if (!profile) return profileModal(true);
     const totals = new Map([...characterIds, 'chang'].map(id => [id, 0]));
-    for (const [id, index] of Object.entries(profile.choices || {})) {
+    for (const [id, index] of Object.entries(progress.choices)) {
       const block = entryMap.get(id)?.blocks[index];
       for (const [character, delta, milestone] of block?.affection || []) {
-        if (milestone && !profile.done?.[milestone]) continue;
+        if (milestone && !progress.done[milestone]) continue;
         totals.set(character, totals.get(character) + delta);
       }
     }
-    $('scoresProfile').textContent = profile.name;
     $('scoresList').innerHTML = [...totals].map(([id, total]) => `
       <div class="score-row"><dt style="--c:${color(id)}">${esc(id === 'chang' ? t('Микаэла', 'Michaela') : name(id))}</dt>
       <dd>${total > 0 ? '+' : ''}${total}</dd></div>`).join('');
@@ -466,11 +422,10 @@
 
   renderGuide();
   localizeInterface();
-  updateProfile();
+  updateProgress();
   applyFilter();
-  profileModal(!activeProfile());
   $('section-1.1').open = true;
-  const choices = activeProfile()?.choices || {};
+  const choices = progress.choices;
   const lastChoice = Object.keys(choices).findLast(id => isOption(entryMap.get(id)?.blocks[choices[id]]));
   const savedTarget = lastChoice && $(`route-${lastChoice}`);
   const linkedTarget = location.hash && $(location.hash.slice(1));
@@ -482,6 +437,5 @@
   requestWakeLock();
 })().catch(error => {
   console.error(error);
-  document.getElementById('profileOverlay').classList.add('hide');
   document.getElementById('counter').textContent = 'Не удалось загрузить гайд / Could not load the guide';
 });
