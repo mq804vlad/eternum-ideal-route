@@ -1,6 +1,8 @@
 (async () => {
   'use strict';
 
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
   const $ = id => document.getElementById(id);
   const loadJson = async path => {
     const response = await fetch(path);
@@ -199,13 +201,13 @@
     $('emptyFilter').hidden = chapterNodes.some(chapter => !chapter.node.hidden);
   }
 
-  function jump(target) {
+  function jump(target, restore = false) {
     if (!target) return;
     for (let node = target; node && node !== $('results'); node = node.parentElement) {
       if (node.hidden) return;
       if (node.matches('.route-chapter, .route-section')) setOpen(node, true, false);
     }
-    target.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    target.scrollIntoView({behavior: restore || matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   }
 
   const filter = $('characterFilter');
@@ -254,8 +256,9 @@
       const {choice: id, option} = choice.dataset;
       const index = Number(option);
       profile.choices ||= {};
-      if (profile.choices[id] === index) delete profile.choices[id];
-      else profile.choices[id] = index;
+      const wasSelected = profile.choices[id] === index;
+      delete profile.choices[id];
+      if (!wasSelected) profile.choices[id] = index;
       if (profile.done) delete profile.done[id];
       save();
       for (const button of choice.closest('.card').querySelectorAll('[data-choice]')) refreshChoice(button);
@@ -400,7 +403,15 @@
   applyFilter();
   profileModal(!activeProfile());
   $('section-1.1').open = true;
-  if (location.hash) requestAnimationFrame(() => jump($(location.hash.slice(1))));
+  const choices = activeProfile()?.choices || {};
+  const lastChoice = Object.keys(choices).findLast(id => isOption(entryMap.get(id)?.blocks[choices[id]]));
+  const savedTarget = lastChoice && $(`route-${lastChoice}`);
+  const linkedTarget = location.hash && $(location.hash.slice(1));
+  const navigation = performance.getEntriesByType('navigation')[0]?.type;
+  const target = navigation === 'reload' || navigation === 'back_forward'
+    ? savedTarget || linkedTarget
+    : linkedTarget || savedTarget;
+  if (target) requestAnimationFrame(() => jump(target, true));
 })().catch(error => {
   console.error(error);
   document.getElementById('profileOverlay').classList.add('hide');
