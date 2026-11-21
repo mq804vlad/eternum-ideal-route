@@ -75,6 +75,7 @@ details[open] > summary::before, .character-filter[open] > summary::after { tran
 .guide-actions { position: fixed; z-index: 8; right: max(12px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 8px; }
 .wake-button { display: grid; width: 44px; height: 44px; padding: 0; place-items: center; background: #19233a; box-shadow: 0 4px 18px #0009; }
 .wake-button[aria-pressed="true"] { color: #ffe393; background: #332d38; border-color: #ffe393; }
+.wake-button[aria-pressed="true"][data-wake-active="false"] { border-style: dashed; }
 .wake-status:not(:empty) { position: absolute; bottom: calc(100% + 8px); right: 0; width: max-content; max-width: min(250px, calc(100vw - 24px)); padding: 8px 10px; color: var(--ink); background: #19233a; border: 1px solid var(--edge); border-radius: 8px; font-size: .82rem; }
 .scores-button { min-height: 44px; background: #19233a; border-color: #8870be; box-shadow: 0 4px 18px #0009; }
 .scores-button span:first-child { color: #d9b7ff; font-size: 1.1em; margin-right: 4px; }

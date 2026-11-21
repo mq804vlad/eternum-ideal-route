@@ -9,12 +9,96 @@
     if (!response.ok) throw new Error(`Could not load ${path}: ${response.status}`);
     return response.json();
   };
-  const [db, translations] = await Promise.all([loadJson('./guide.json?v=f2d9c692ccc6'), loadJson('./translations.json?v=bb84587f5b57')]);
   let language = 'ru';
   try {
     if (localStorage.getItem('eternum-route-language') === 'en') language = 'en';
   } catch {}
   const t = (ru, en) => language === 'ru' ? ru : en;
+
+  const wakeButton = $('wakeButton');
+  const wakeStatus = $('wakeStatus');
+  const wakeKey = 'eternum-route-keep-screen-on';
+  let keepScreenOn = false;
+  let wakeLock;
+  let wakeRequestPending = false;
+  let wakeStatusTimer;
+
+  try {
+    keepScreenOn = localStorage.getItem(wakeKey) === 'true';
+  } catch {}
+
+  function renderWakeLock() {
+    const title = t('Не гасить экран', 'Keep screen on');
+    wakeButton.setAttribute('aria-label', title);
+    const active = !!wakeLock && !wakeLock.released;
+    wakeButton.title = keepScreenOn && !active
+      ? t('Не гасить экран: ожидание разрешения браузера', 'Keep screen on: waiting for browser permission')
+      : title;
+    wakeButton.setAttribute('aria-pressed', String(keepScreenOn));
+    wakeButton.dataset.wakeActive = String(active);
+  }
+
+  function reportWakeStatus(text) {
+    clearTimeout(wakeStatusTimer);
+    wakeStatus.textContent = text;
+    wakeStatusTimer = setTimeout(() => { wakeStatus.textContent = ''; }, 4000);
+  }
+
+  async function requestWakeLock(interactive = false) {
+    if (!navigator.wakeLock || !keepScreenOn || document.visibilityState !== 'visible' || wakeRequestPending || (wakeLock && !wakeLock.released)) return;
+    wakeRequestPending = true;
+    try {
+      const lock = await navigator.wakeLock.request('screen');
+      if (!keepScreenOn || document.visibilityState !== 'visible') {
+        await lock.release();
+        return;
+      }
+      wakeLock = lock;
+      lock.addEventListener('release', () => {
+        if (wakeLock === lock) wakeLock = undefined;
+        renderWakeLock();
+      }, {once: true});
+      renderWakeLock();
+      if (interactive) reportWakeStatus(t('Экран останется включённым', 'Screen will stay on'));
+    } catch {
+      if (interactive && keepScreenOn) reportWakeStatus(t('Браузер пока не удерживает экран включённым', 'The browser is not keeping the screen on yet'));
+    } finally {
+      wakeRequestPending = false;
+    }
+  }
+
+  wakeButton.onclick = () => {
+    if (!keepScreenOn && !navigator.wakeLock) {
+      reportWakeStatus(t('Этот браузер не поддерживает режим', 'This browser does not support keeping the screen on'));
+      return;
+    }
+    keepScreenOn = !keepScreenOn;
+    try { localStorage.setItem(wakeKey, String(keepScreenOn)); } catch {}
+    if (keepScreenOn) {
+      renderWakeLock();
+      requestWakeLock(true);
+      return;
+    }
+    const lock = wakeLock;
+    wakeLock = undefined;
+    renderWakeLock();
+    lock?.release().catch(() => {});
+    reportWakeStatus(t('Режим выключен', 'Keep screen on is off'));
+  };
+
+  document.addEventListener('visibilitychange', () => requestWakeLock());
+  window.addEventListener('pageshow', () => requestWakeLock());
+
+  function retryWakeLockOnInteraction(event) {
+    if (event.isTrusted && !wakeButton.contains(event.target)) requestWakeLock(true);
+  }
+
+  document.addEventListener('click', retryWakeLockOnInteraction, true);
+  document.addEventListener('keydown', retryWakeLockOnInteraction, true);
+  renderWakeLock();
+  requestWakeLock();
+
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=f2d9c692ccc6'), loadJson('./translations.json?v=bb84587f5b57')]);
   const message = text => translations.messages[text]?.[language === 'ru' ? 1 : 0] ?? text;
   const chapterTitle = chapter => t(chapter.title, translations.chapters[chapter.number - 1]);
   const storageKey = 'eternum-route-progress-v1';
@@ -335,72 +419,6 @@
     setOpen(node, !(animations.get(node)?.open ?? node.open));
   });
 
-  const wakeButton = $('wakeButton');
-  const wakeStatus = $('wakeStatus');
-  const wakeKey = 'eternum-route-keep-screen-on';
-  let keepScreenOn = false;
-  let wakeLock;
-  let wakeRequestPending = false;
-  let wakeStatusTimer;
-
-  try {
-    keepScreenOn = localStorage.getItem(wakeKey) === 'true';
-  } catch {}
-
-  function renderWakeLock() {
-    const title = t('Не гасить экран', 'Keep screen on');
-    wakeButton.setAttribute('aria-label', title);
-    wakeButton.title = title;
-    wakeButton.setAttribute('aria-pressed', String(!!wakeLock && !wakeLock.released));
-  }
-
-  function reportWakeStatus(text) {
-    clearTimeout(wakeStatusTimer);
-    wakeStatus.textContent = text;
-    wakeStatusTimer = setTimeout(() => { wakeStatus.textContent = ''; }, 4000);
-  }
-
-  async function requestWakeLock(interactive = false) {
-    if (!keepScreenOn || document.visibilityState !== 'visible' || wakeRequestPending || (wakeLock && !wakeLock.released)) return;
-    wakeRequestPending = true;
-    try {
-      const lock = await navigator.wakeLock.request('screen');
-      if (!keepScreenOn || document.visibilityState !== 'visible') {
-        await lock.release();
-        return;
-      }
-      wakeLock = lock;
-      lock.addEventListener('release', () => {
-        if (wakeLock === lock) wakeLock = undefined;
-        renderWakeLock();
-      }, {once: true});
-      renderWakeLock();
-      if (interactive) reportWakeStatus(t('Экран останется включённым', 'Screen will stay on'));
-    } catch {
-      if (interactive && keepScreenOn) reportWakeStatus(t('Браузер не разрешил удерживать экран включённым', 'The browser could not keep the screen on'));
-    } finally {
-      wakeRequestPending = false;
-    }
-  }
-
-  wakeButton.onclick = () => {
-    if (!navigator.wakeLock) {
-      reportWakeStatus(t('Этот браузер не поддерживает режим', 'This browser does not support keeping the screen on'));
-      return;
-    }
-    keepScreenOn = !(keepScreenOn && ((wakeLock && !wakeLock.released) || wakeRequestPending));
-    try { localStorage.setItem(wakeKey, String(keepScreenOn)); } catch {}
-    if (keepScreenOn) {
-      requestWakeLock(true);
-      return;
-    }
-    wakeLock?.release();
-    reportWakeStatus(t('Режим выключен', 'Keep screen on is off'));
-  };
-
-  document.addEventListener('visibilitychange', () => requestWakeLock());
-  window.addEventListener('pageshow', () => requestWakeLock());
-
   const scoresDialog = $('scoresDialog');
   $('scoresButton').onclick = () => {
     const totals = new Map([...characterIds, 'chang'].map(id => [id, 0]));
@@ -434,7 +452,6 @@
     ? savedTarget || linkedTarget
     : linkedTarget || savedTarget;
   if (target) requestAnimationFrame(() => jump(target, true));
-  requestWakeLock();
 })().catch(error => {
   console.error(error);
   document.getElementById('counter').textContent = 'Не удалось загрузить гайд / Could not load the guide';
