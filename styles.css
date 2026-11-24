@@ -93,3 +93,11 @@ details[open] > summary::before, .character-filter[open] > summary::after { tran
 .choice:has(.choice-pick) .route-ref { position: relative; z-index: 1; }
 .choice.picked { outline-width: 1px; background-color: #271d42; box-shadow: inset 0 0 0 1px #c8a5ff60; }
 .choice.ideal.picked { box-shadow: inset 3px 0 #42ffcf, inset 0 0 0 1px #c8a5ff60; }
+
+.chat-turn { display: grid; gap: 8px; margin-top: 14px; }
+.chat-turn + .chat-turn { padding-top: 12px; border-top: 1px solid var(--edge); }
+.chat-message { justify-self: start; width: fit-content; max-width: 94%; }
+.chat-replies { justify-self: end; width: fit-content; max-width: 94%; }
+.chat-label { display: block; padding-inline: 4px; color: var(--muted); font-size: .78rem; font-weight: 650; }
+.chat-replies .chat-label { text-align: right; }
+.chat-reward { color: #93ffdf; font-weight: 750; }

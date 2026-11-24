@@ -4571,9 +4571,12 @@
           "kind": "note",
           "text": "Answer your texts in any order. Some texts only appear after you’ve answered others. You can end this segment at any time (skip to 4.11), but for the ideal route you must answer all texts.\nIf you don’t answer Luna’s texts (4.10.5): потеря ветки (Луна)",
           "notes": [],
-          "ideal": false
+          "ideal": false,
+          "ru": "Отвечай в любом порядке. Некоторые переписки появятся только после других. Для идеального маршрута ответь во всех доступных чатах до перехода к 4.11. Если пропустить чат Луны (4.10.5), её ветка закроется.",
+          "en": "Reply in any order. Some conversations appear only after you answer others. For the ideal route, answer every available chat before moving on to 4.11. Skipping Luna’s chat (4.10.5) closes her route."
         }
-      ]
+      ],
+      "ruTitle": "Переписки после школы"
     },
     {
       "id": "4.10.1",
@@ -4595,7 +4598,8 @@
           "text": "The Boyle mansion, Rockefeller server, the masquerade party... remember?",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Особняк Бойлов, сервер Рокфеллера, маскарад… Помнишь?"
         },
         {
           "text": "Btw, my father will probably be there, so... let’s try to avoid him",
@@ -4613,7 +4617,14 @@
           "text": "Of course. How could I forget about our first date, babe?",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": true,
+          "ru": "Конечно. Как я мог забыть о нашем первом свидании, детка?",
+          "affection": [
+            [
+              "alex",
+              1
+            ]
+          ]
         },
         {
           "text": "Got it. I’ll text you tomorrow. Cya Alex",
@@ -4635,6 +4646,19 @@
           "notes": [],
           "ideal": false
         }
+      ],
+      "ruTitle": "Алекс о предстоящем ужине",
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            4
+          ]
+        }
+      ],
+      "chatContext": [
+        "Этот ответ появится, если ветка Алекс активна. Если она вместо этого пишет об отце, любой ответ завершит чат без очков.",
+        "This reply appears if Alex’s route is active. If she instead texts about her father, either reply ends the chat without points."
       ]
     },
     {
@@ -4657,7 +4681,8 @@
           "text": "Holy shit Orion, I just saw an alpaca with your hairstyle on Reddit",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Чёрт, Орион, я только что увидела на Reddit альпаку с твоей причёской."
         },
         {
           "text": "Ha. ha. ha. Very funny, Dalia...",
@@ -4670,8 +4695,14 @@
           "text": "Funny you should mention that...",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Забавно, что ты скинула мне это..."
+          "ideal": true,
+          "ru": "Забавно, что ты скинула мне это...",
+          "affection": [
+            [
+              "dalia",
+              1
+            ]
+          ]
         },
         {
           "text": "Anyway, I’m jumping in the shower. Bye!",
@@ -4703,21 +4734,38 @@
           "text": "HAHAHAHA",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "АХАХАХА"
         },
         {
           "text": "Now I see where you got your style from",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Теперь я понимаю, с кого ты скопировала свой стиль"
         },
         {
           "text": "Maybe you should go back to the braids",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Может, тебе стоит вернуться к косам?"
+        }
+      ],
+      "ruTitle": "Мем Далии",
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            3
+          ]
+        },
+        {
+          "message": 8,
+          "replies": [
+            9,
+            10
+          ]
         }
       ]
     },
@@ -4741,13 +4789,14 @@
           "text": "Heyyyy! I need the help of my manager!",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Привееет! Мне нужна помощь моего менеджера!"
         },
         {
           "text": "What’s up? How can I help my favorite client?",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Что случилось? Как я могу помочь моей любимой модели?"
         },
         {
@@ -4761,13 +4810,21 @@
           "text": "Option A or option B?",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Вариант А или вариант Б?"
         },
         {
           "text": "All photos are great when the girl in them is so stunning",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": true,
+          "ru": "Все фотографии хороши, когда на них такая красавица.",
+          "affection": [
+            [
+              "penny",
+              1
+            ]
+          ]
         },
         {
           "kind": "note",
@@ -4779,21 +4836,44 @@
           "text": "Thanks, though",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Но всё равно спасибо."
         },
         {
           "text": "Option A",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Вариант А"
         },
         {
           "text": "Option B",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Вариант Б"
+        }
+      ],
+      "ruTitle": "Фото для Пенни",
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
+        },
+        {
+          "message": 4,
+          "replies": [
+            5
+          ]
+        },
+        {
+          "message": 7,
+          "replies": [
+            8,
+            9
+          ]
         }
       ]
     },
@@ -4817,7 +4897,8 @@
           "text": "If you had just killed an ancient demon to rescue a girl, what badass quote would you say immediately after?",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Если бы ты только что убил древнего демона, чтобы спасти девушку, какую крутую фразу ты бы сказал сразу после этого?"
         },
         {
           "text": "That doesn’t seem very urgent... I’ve got things to do, I’ll see you later",
@@ -4830,7 +4911,7 @@
           "text": "That’s... kind of an oddly specific question to ask",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Это... Довольно странный вопрос"
         },
         {
@@ -4843,42 +4924,67 @@
           "text": "You sealed your fate the moment you put your filthy hands on her, demon. Go to hell... again.",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Ты сам предрешил свою судьбу, когда наложил на нее свои грязные руки, демон! Катись в Ад... Снова!"
         },
         {
           "text": "The only fate of the weak is to be crushed by the strong. Know your place, demon.",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Удел слабых - быть раздавленным сильным. Знай свое место, демон!"
         },
         {
           "text": "Nothing personal, demon. Just taking out the trash.",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Ничего личного, демон. Просто вынес мусор."
         },
         {
           "text": "Stop bothering me!",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Хватит меня доставать!"
         },
         {
           "text": "Haha okay, okay, get back to your... thing",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Хаха ладно, ладно, возвращайся к своим... Что бы там ни было."
         },
         {
           "text": "You’re the one who texted me!",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Это ты мне написала!"
+        }
+      ],
+      "ruTitle": "Крутая фраза для Новы",
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            3
+          ]
+        },
+        {
+          "message": 4,
+          "replies": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "message": 8,
+          "replies": [
+            9,
+            10
+          ]
         }
       ]
     },
@@ -4915,13 +5021,15 @@
           "text": "Really? I’d love to!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": true,
+          "ru": "Правда? Я бы с удовольствием!"
         },
         {
           "text": "DO YOU LIKE YOUR TACOS SPICY OR EXTRA SPICY?",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "ТЫ ЛЮБИШЬ ТАКОС ОСТРЫЕ ИЛИ ОЧЕНЬ ОСТРЫЕ?"
         },
         {
           "kind": "note",
@@ -4933,7 +5041,8 @@
           "text": "EXTRA SPICY!",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": true,
+          "ru": "ОЧЕНЬ ОСТРЫЕ!"
         },
         {
           "text": "Not very spicy",
@@ -4946,14 +5055,21 @@
           "text": "I’m sorry about that, he grabbed my phone",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Извини, он отобрал у меня телефон."
         },
         {
           "text": "Haha no worries, your dad’s just as awesome as you",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Хаха, не волнуйся, твой отец такой же замечательный, как и ты"
+          "ideal": true,
+          "ru": "Хаха, не волнуйся, твой отец такой же замечательный, как и ты",
+          "affection": [
+            [
+              "luna",
+              1
+            ]
+          ]
         },
         {
           "text": "Your father is a bit... out there",
@@ -4967,6 +5083,31 @@
           "text": "Луна +1",
           "notes": [],
           "ideal": false
+        }
+      ],
+      "ruTitle": "Приглашение Луны",
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            3
+          ]
+        },
+        {
+          "message": 4,
+          "replies": [
+            6
+          ],
+          "speaker": [
+            "Отец Луны",
+            "Luna’s dad"
+          ]
+        },
+        {
+          "message": 8,
+          "replies": [
+            9
+          ]
         }
       ]
     },
@@ -4996,7 +5137,14 @@
           "text": "I think you’d look better without it",
           "notes": [],
           "kind": "reply",
-          "ideal": false
+          "ideal": true,
+          "ru": "Думаю, без него ты выглядела бы ещё лучше.",
+          "affection": [
+            [
+              "nancy",
+              1
+            ]
+          ]
         },
         {
           "text": "Looks great!",
@@ -5015,13 +5163,14 @@
           "text": "Thanks! We should head to the beach one day before it gets too cold",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Спасибо! Надо как-нибудь сходить на пляж, пока не стало слишком холодно."
         },
         {
           "text": "That sounds awesome!",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Звучит превосходно!"
         },
         {
@@ -5030,6 +5179,21 @@
           "kind": "reply",
           "ideal": false,
           "ru": "Я не фанат пляжей"
+        }
+      ],
+      "ruTitle": "Нэнси дразнится",
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
+        },
+        {
+          "message": 5,
+          "replies": [
+            6
+          ]
         }
       ]
     },
@@ -5047,13 +5211,14 @@
           "text": "You’ve gotta help me!",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Ты должен мне помочь!"
         },
         {
           "text": "What do you need?",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Что от меня требуется?"
         },
         {
@@ -5106,21 +5271,49 @@
           "text": "The first one",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Первый"
+          "ideal": true,
+          "ru": "Первый",
+          "affection": [
+            [
+              "chang",
+              1
+            ]
+          ]
         },
         {
           "text": "The second one",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Второй"
+          "ideal": true,
+          "ru": "Второй",
+          "affection": [
+            [
+              "chang",
+              1
+            ]
+          ]
         },
         {
           "kind": "note",
           "text": "Чанг и Микаэла +1 · Чанг и Микаэла +1",
           "notes": [],
           "ideal": false
+        }
+      ],
+      "ruTitle": "Чанг просит помочь",
+      "chat": [
+        {
+          "message": 0,
+          "replies": [
+            1
+          ]
+        },
+        {
+          "message": 3,
+          "replies": [
+            9,
+            10
+          ]
         }
       ]
     },
