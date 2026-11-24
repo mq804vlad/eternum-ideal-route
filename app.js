@@ -98,7 +98,7 @@
   renderWakeLock();
   requestWakeLock();
 
-  const [db, translations] = await Promise.all([loadJson('./guide.json?v=48cc0407b44f'), loadJson('./translations.json?v=bb84587f5b57')]);
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=7f5892dccae1'), loadJson('./translations.json?v=bb84587f5b57')]);
   const message = text => translations.messages[text]?.[language === 'ru' ? 1 : 0] ?? text;
   const chapterTitle = chapter => t(chapter.title, translations.chapters[chapter.number - 1]);
   const storageKey = 'eternum-route-progress-v1';
@@ -206,7 +206,10 @@
     const picked = selectable && progress.choices[choiceKey] === index;
     return `<div class="choice ${block.ideal ? 'ideal' : ''} ${block.kind !== 'option' ? 'route-dialogue' : ''} ${picked ? 'picked' : ''}">
       ${block.ideal ? `<span class="recommend" role="img" aria-label="${t('Рекомендуемый вариант', 'Recommended choice')}">◆</span>` : ''}${text}
-      ${block.notes.map(note => `<p class="choice-note">${linkReferences(message(note))}</p>`).join('')}
+      ${block.notes.map((note, noteIndex) => {
+        const localizedNote = language === 'ru' ? block.ruNotes?.[noteIndex] ?? message(note) : message(note);
+        return `<p class="choice-note">${linkReferences(localizedNote).replaceAll('\n', '<br>')}</p>`;
+      }).join('')}
       ${entry.chat && block.affection ? `<p class="choice-note chat-reward">+${block.affection[0][1]}</p>` : ''}
       ${selectable ? `<button type="button" class="choice-pick" data-choice="${choiceKey}" data-option="${index}" aria-pressed="${picked}" aria-label="${t('Выбор', 'Choice')}: ${esc(blockText)}"></button>` : ''}
     </div>`;
