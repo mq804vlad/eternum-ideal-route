@@ -98,7 +98,7 @@
   renderWakeLock();
   requestWakeLock();
 
-  const [db, translations] = await Promise.all([loadJson('./guide.json?v=7f5892dccae1'), loadJson('./translations.json?v=bb84587f5b57')]);
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=5711b7633509'), loadJson('./translations.json?v=bb84587f5b57')]);
   const message = text => translations.messages[text]?.[language === 'ru' ? 1 : 0] ?? text;
   const chapterTitle = chapter => t(chapter.title, translations.chapters[chapter.number - 1]);
   const storageKey = 'eternum-route-progress-v1';
@@ -113,10 +113,12 @@
   const entryMap = new Map(entries.map(entry => [entry.id, entry]));
   const isOption = block => block?.kind === 'option' || block?.kind === 'reply';
   const chatChoiceKey = (id, turn) => `${id}:${turn + 1}`;
+  const choiceKeyForOption = (entry, index) => entry.multiple ? `${entry.id}:${index}` : entry.id;
   const entryIdForChoice = key => key.split(':', 1)[0];
   const isPassed = entry => entry.chat
     ? entry.chat.every(({replies}, turn) => replies.includes(progress.choices[chatChoiceKey(entry.id, turn)]))
-    : !!progress.done[entry.id] || isOption(entry.blocks[progress.choices[entry.id]]);
+    : !!progress.done[entry.id] || entry.blocks.some((block, index) =>
+      isOption(block) && progress.choices[choiceKeyForOption(entry, index)] === index);
   const displayedIds = new Set(db.entries.map(entry => entry.id));
   const chapters = db.chapters.map((title, index) => ({
     title,
@@ -126,11 +128,18 @@
 
   const progress = loadProgress();
   progress.choices = Object.fromEntries(Object.entries(progress.choices).flatMap(([key, index]) => {
-    const chat = entryMap.get(key)?.chat;
-    if (!chat) return [[key, index]];
-    const turn = chat.findIndex(({replies}) => replies.includes(index));
-    if (turn === -1) return [];
-    const updatedKey = chatChoiceKey(key, turn);
+    const entry = entryMap.get(key);
+    let updatedKey;
+    if (entry?.chat) {
+      const turn = entry.chat.findIndex(({replies}) => replies.includes(index));
+      if (turn === -1) return [];
+      updatedKey = chatChoiceKey(key, turn);
+    } else if (entry?.multiple) {
+      if (!isOption(entry.blocks[index])) return [];
+      updatedKey = choiceKeyForOption(entry, index);
+    } else {
+      return [[key, index]];
+    }
     return Object.hasOwn(progress.choices, updatedKey) ? [] : [[updatedKey, index]];
   }));
 
@@ -187,7 +196,8 @@
 
   function refreshChoice(button) {
     const selected = progress.choices[button.dataset.choice] === Number(button.dataset.option);
-    button.setAttribute('aria-pressed', String(selected));
+    if (button.type === 'checkbox') button.checked = selected;
+    else button.setAttribute('aria-pressed', String(selected));
     button.closest('.choice').classList.toggle('picked', selected);
   }
 
@@ -195,7 +205,7 @@
 
   function makeBlocks(entry) {
     if (entry.chat) return makeChat(entry);
-    return entry.blocks.map((block, index) => makeBlock(entry, block, index, entry.id)).join('');
+    return entry.blocks.map((block, index) => makeBlock(entry, block, index, choiceKeyForOption(entry, index))).join('');
   }
 
   function makeBlock(entry, block, index, choiceKey) {
@@ -204,14 +214,20 @@
     if (block.kind === 'note') return `<div class="route-note">${text}</div>`;
     const selectable = entry.kind !== 'section' && isOption(block);
     const picked = selectable && progress.choices[choiceKey] === index;
-    return `<div class="choice ${block.ideal ? 'ideal' : ''} ${block.kind !== 'option' ? 'route-dialogue' : ''} ${picked ? 'picked' : ''}">
+    const label = `${t('Выбор', 'Choice')}: ${esc(blockText)}`;
+    const attributes = `data-choice="${choiceKey}" data-option="${index}" aria-label="${label}"`;
+    const checkboxId = `choice-${entry.id}-${index}`;
+    return `<div class="choice ${entry.multiple && selectable ? 'multi-choice' : ''} ${block.ideal ? 'ideal' : ''} ${block.kind !== 'option' ? 'route-dialogue' : ''} ${picked ? 'picked' : ''}">
       ${block.ideal ? `<span class="recommend" role="img" aria-label="${t('Рекомендуемый вариант', 'Recommended choice')}">◆</span>` : ''}${text}
       ${block.notes.map((note, noteIndex) => {
         const localizedNote = language === 'ru' ? block.ruNotes?.[noteIndex] ?? message(note) : message(note);
         return `<p class="choice-note">${linkReferences(localizedNote).replaceAll('\n', '<br>')}</p>`;
       }).join('')}
       ${entry.chat && block.affection ? `<p class="choice-note chat-reward">+${block.affection[0][1]}</p>` : ''}
-      ${selectable ? `<button type="button" class="choice-pick" data-choice="${choiceKey}" data-option="${index}" aria-pressed="${picked}" aria-label="${t('Выбор', 'Choice')}: ${esc(blockText)}"></button>` : ''}
+      ${selectable && (entry.multiple
+        ? `<label class="choice-toggle" for="${checkboxId}"></label>
+           <input type="checkbox" class="choice-check" id="${checkboxId}" ${attributes} ${picked ? 'checked' : ''}>`
+        : `<button type="button" class="choice-pick" ${attributes} aria-pressed="${picked}"></button>`) || ''}
     </div>`;
   }
 
@@ -258,7 +274,7 @@
       <div class="chapter-body">
       ${[...chapter.sections.values()].map(section => {
         const first = section.entries[0];
-        const heading = section.heading ?? (first?.id === section.id && !first.blocks.length ? first : null);
+        const heading = section.heading ?? (first?.id === section.id && (!first.blocks.length || section.entries.length > 1) ? first : null);
         return `<details class="route-section" id="section-${section.id}">
           <summary><h3>${section.id}${heading ? ` · ${esc(entryTitle(heading))}` : ''}</h3></summary>
           <div class="section-body">

@@ -101,3 +101,9 @@ details[open] > summary::before, .character-filter[open] > summary::after { tran
 .chat-label { display: block; padding-inline: 4px; color: var(--muted); font-size: .78rem; font-weight: 650; }
 .chat-replies .chat-label { text-align: right; }
 .chat-reward { color: #93ffdf; font-weight: 750; }
+
+.multi-choice { position: relative; padding-inline-end: 44px; }
+.choice-toggle { position: absolute; inset: 0; cursor: pointer; border-radius: inherit; }
+.choice-toggle:hover { background: #c8a5ff0c; }
+.choice-check { position: absolute; inset: 12px 13px auto auto; z-index: 1; width: 18px; height: 18px; margin: 0; accent-color: #52f3d5; cursor: pointer; }
+.multi-choice .route-ref { position: relative; z-index: 1; }
