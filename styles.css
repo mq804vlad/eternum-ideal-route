@@ -87,9 +87,18 @@ details[open] > summary::before, .character-filter[open] > summary::after { tran
 .score-row dt { color: var(--c); }
 .score-row dd { font-variant-numeric: tabular-nums; margin: 0; }
 
-.choice:has(.choice-pick) { position: relative; }
+.choice:has(.choice-pick) { position: relative; padding-inline-end: 44px; }
 .choice-pick { position: absolute; inset: 0; width: 100%; padding: 0; border: 0; border-radius: inherit; background: transparent; }
 .choice-pick:hover { background: #c8a5ff0c; }
+.choice-pick::before, .choice-pick::after { content: ""; position: absolute; top: 12px; inset-inline-end: 13px; width: 18px; height: 18px; border-radius: 50%; pointer-events: none; }
+.choice-pick::before { box-sizing: border-box; border: 2px solid #a6a1c8; }
+.choice-pick[aria-pressed="true"]::before { border-color: #e4c8ff; }
+.choice-pick[aria-pressed="true"]::after { top: 16px; inset-inline-end: 17px; width: 10px; height: 10px; background: #e4c8ff; }
+@media (forced-colors: active) {
+  .choice-pick::before { border-color: ButtonText; }
+  .choice-pick[aria-pressed="true"]::before { border-color: Highlight; }
+  .choice-pick[aria-pressed="true"]::after { forced-color-adjust: none; background: Highlight; }
+}
 .choice:has(.choice-pick) .route-ref { position: relative; z-index: 1; }
 .choice.picked { outline-width: 1px; background-color: #271d42; box-shadow: inset 0 0 0 1px #c8a5ff60; }
 .choice.ideal.picked { box-shadow: inset 3px 0 #42ffcf, inset 0 0 0 1px #c8a5ff60; }
