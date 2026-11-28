@@ -98,7 +98,7 @@
   renderWakeLock();
   requestWakeLock();
 
-  const [db, translations] = await Promise.all([loadJson('./guide.json?v=5711b7633509'), loadJson('./translations.json?v=bb84587f5b57')]);
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=099898186034'), loadJson('./translations.json?v=bb84587f5b57')]);
   const message = text => translations.messages[text]?.[language === 'ru' ? 1 : 0] ?? text;
   const chapterTitle = chapter => t(chapter.title, translations.chapters[chapter.number - 1]);
   const storageKey = 'eternum-route-progress-v1';
@@ -146,16 +146,16 @@
   function loadProgress() {
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey));
-      if (saved) return {done: saved.done || {}, choices: saved.choices || {}};
+      if (saved) return {done: saved.done || {}, choices: saved.choices || {}, scoreChecks: saved.scoreChecks || {}};
       const legacy = JSON.parse(localStorage.getItem('eternum-route-profiles-v3'));
       if (Array.isArray(legacy?.profiles) && legacy.profiles.length) {
         const previous = legacy.profiles.find(profile => profile.id === legacy.active) || legacy.profiles[0];
-        const migrated = {done: previous.done || {}, choices: previous.choices || {}};
+        const migrated = {done: previous.done || {}, choices: previous.choices || {}, scoreChecks: {}};
         try { localStorage.setItem(storageKey, JSON.stringify(migrated)); } catch {}
         return migrated;
       }
     } catch {}
-    return {done: {}, choices: {}};
+    return {done: {}, choices: {}, scoreChecks: {}};
   }
 
   for (const entry of db.entries) {
@@ -182,8 +182,13 @@
     $('percent').textContent = `${Math.round(percent)}%`;
     $('progressFill').style.width = `${percent}%`;
   }
+  function doneLabel(entry, done) {
+    const label = entry.completionLabel ? t(...entry.completionLabel) : (done ? t('Пройдено', 'Completed') : t('Отметить', 'Mark done'));
+    return `${done ? '✓' : '○'} ${label}`;
+  }
+
   function updateDoneButton(button, done) {
-    button.textContent = done ? t('✓ Пройдено', '✓ Completed') : t('○ Отметить', '○ Mark done');
+    button.textContent = doneLabel(entryMap.get(button.dataset.done), done);
     button.classList.toggle('done', done);
     button.setAttribute('aria-pressed', String(done));
   }
@@ -252,6 +257,18 @@
     }).join('');
   }
 
+  function makeScoreChecks(entry) {
+    return (entry.scoreChecks || []).map(check => {
+      const key = `${entry.id}:${check.id}`;
+      const points = check.affection.map(([character, delta]) =>
+        `${character === 'chang' ? t('Микаэла', 'Michaela') : name(character)} ${delta > 0 ? '+' : '−'}${Math.abs(delta)}`).join(' · ');
+      return `<label class="score-check">
+        <input type="checkbox" data-score-check="${key}" ${progress.scoreChecks[key] ? 'checked' : ''}>
+        <span>${esc(t(...check.label))} <strong>${esc(points)}</strong></span>
+      </label>`;
+    }).join('');
+  }
+
   function makeCard(entry) {
     const colors = entry.characters.map(color);
     const stripe = colors.length ? `linear-gradient(90deg,${colors.map((c,i) => `${c} ${i*100/colors.length}% ${100*(i+1)/colors.length}%`).join(',')})` : 'linear-gradient(90deg,#2d506e,#4da4be)';
@@ -261,7 +278,8 @@
       <h4 class="cardTitle">${esc(entryTitle(entry))}</h4>
       ${entry.characters.length ? `<div class="pills">${entry.characters.map(id => `<span class="pill" style="--c:${color(id)}">${esc(name(id))}</span>`).join('')}</div>` : ''}
       ${makeBlocks(entry)}
-      ${entry.blocks.some(isOption) ? '' : `<div class="cardFooter"><button class="doneBtn ${done ? 'done' : ''}" data-done="${entry.id}" aria-pressed="${done}">${done ? t('✓ Пройдено', '✓ Completed') : t('○ Отметить', '○ Mark done')}</button></div>`}
+      ${makeScoreChecks(entry)}
+      ${entry.blocks.some(isOption) ? '' : `<div class="cardFooter"><button class="doneBtn ${done ? 'done' : ''}" data-done="${entry.id}" aria-pressed="${done}">${esc(doneLabel(entry, done))}</button></div>`}
     </article>`;
   }
 
@@ -278,7 +296,7 @@
         return `<details class="route-section" id="section-${section.id}">
           <summary><h3>${section.id}${heading ? ` · ${esc(entryTitle(heading))}` : ''}</h3></summary>
           <div class="section-body">
-            ${section.heading ? `<div class="section-context" id="route-${section.id}">${makeBlocks(section.heading)}</div>` : ''}
+            ${section.heading ? `<div class="section-context" id="route-${section.id}">${makeBlocks(section.heading)}${makeScoreChecks(section.heading)}</div>` : ''}
             ${section.entries.map(makeCard).join('')}
           </div>
         </details>`;
@@ -386,6 +404,14 @@
       updateProgress();
       return;
     }
+    const scoreCheck = event.target.closest('[data-score-check]');
+    if (scoreCheck) {
+      const key = scoreCheck.dataset.scoreCheck;
+      if (scoreCheck.checked) progress.scoreChecks[key] = true;
+      else delete progress.scoreChecks[key];
+      save();
+      return;
+    }
     const button = event.target.closest('[data-done]');
     if (!button) return;
     const id = button.dataset.done;
@@ -477,16 +503,33 @@
     setOpen(node, !(animations.get(node)?.open ?? node.open));
   });
 
-  const scoresDialog = $('scoresDialog');
-  $('scoresButton').onclick = () => {
+  function relationshipTotals() {
     const totals = new Map([...characterIds, 'chang'].map(id => [id, 0]));
-    for (const [id, index] of Object.entries(progress.choices)) {
-      const block = entryMap.get(entryIdForChoice(id))?.blocks[index];
-      for (const [character, delta, milestone] of block?.affection || []) {
+
+    function addPoints(affection = []) {
+      for (const [character, delta, milestone, prerequisite] of affection) {
         if (milestone && !progress.done[milestone]) continue;
+        if (prerequisite && progress.choices[prerequisite[0]] !== prerequisite[1]) continue;
         totals.set(character, totals.get(character) + delta);
       }
     }
+
+    for (const [id, index] of Object.entries(progress.choices)) {
+      const block = entryMap.get(entryIdForChoice(id))?.blocks[index];
+      addPoints(block?.affection);
+    }
+    for (const entry of db.entries) {
+      if (progress.done[entry.id]) addPoints(entry.completionAffection);
+      for (const check of entry.scoreChecks || []) {
+        if (progress.scoreChecks[`${entry.id}:${check.id}`]) addPoints(check.affection);
+      }
+    }
+    return totals;
+  }
+
+  const scoresDialog = $('scoresDialog');
+  $('scoresButton').onclick = () => {
+    const totals = relationshipTotals();
     $('scoresList').innerHTML = [...totals].map(([id, total]) => `
       <div class="score-row"><dt style="--c:${color(id)}">${esc(id === 'chang' ? t('Микаэла', 'Michaela') : name(id))}</dt>
       <dd>${total > 0 ? '+' : ''}${total}</dd></div>`).join('');
