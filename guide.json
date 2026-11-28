@@ -8449,13 +8449,13 @@
         {
           "text": "Grab Nova and fuck her",
           "notes": [
-            "She won’t let you do it, but ultimately it doesn’t have negative impact."
+            "Nova refuses and you interrupt the moment. The PDF lists no later route penalty."
           ],
           "kind": "option",
-          "ideal": true,
+          "ideal": false,
           "ru": "Схватить Нову и заняться с ней сексом",
           "ruNotes": [
-            "Она не согласится, но дальнейших последствий у выбора нет."
+            "Нова откажет, и ты прервёшь момент. В PDF штрафов для дальнейшего маршрута не указано."
           ]
         },
         {

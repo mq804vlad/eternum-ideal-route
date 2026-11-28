@@ -98,7 +98,7 @@
   renderWakeLock();
   requestWakeLock();
 
-  const [db, translations] = await Promise.all([loadJson('./guide.json?v=5b43edd0ac35'), loadJson('./translations.json?v=bb84587f5b57')]);
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=52ba95dcee68'), loadJson('./translations.json?v=bb84587f5b57')]);
   const message = text => translations.messages[text]?.[language === 'ru' ? 1 : 0] ?? text;
   const chapterTitle = chapter => t(chapter.title, translations.chapters[chapter.number - 1]);
   const storageKey = 'eternum-route-progress-v1';
