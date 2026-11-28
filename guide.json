@@ -7638,7 +7638,8 @@
           "text": "Requirement: ветка Луна активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужна активная ветка Луны."
+          "ru": "Нужна активная ветка Луны.",
+          "en": "Luna’s route must be active."
         },
         {
           "text": "I was about to play some Eternum",
@@ -7651,8 +7652,8 @@
           "text": "Sounds awesome! Have fun",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Звучит потрясающе! Хорошо проведи время"
+          "ideal": true,
+          "ru": "Здорово! Повеселись!"
         },
         {
           "text": "Cool",
@@ -7671,8 +7672,8 @@
           "text": "Anything with fights and lots of action!",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Все, где присутствуют схватки и много экшена!"
+          "ideal": true,
+          "ru": "Что-нибудь с драками и кучей экшена!"
         },
         {
           "text": "A fishing simulator!",
@@ -7685,8 +7686,26 @@
           "text": "Something kinky!",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Что-нибудь извращенное!"
+        }
+      ],
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
+        },
+        {
+          "message": 4,
+          "replies": [
+            5,
+            7
+          ]
         }
       ]
     },
@@ -7705,19 +7724,21 @@
           "text": "Requirement: ветка Нова активна and you didn’t look at Nova’s drawing (5.2.1)",
           "notes": [],
           "ideal": false,
-          "ru": "Ветка Новы должна быть активна, а её рисунок должен остаться непросмотренным (5.2.1)."
+          "ru": "Нужна активная ветка Новы. В 5.2.1 ты не должен был смотреть её рисунок.",
+          "en": "Nova’s route must be active, and you must have skipped looking at her drawing (5.2.1)."
         },
         {
           "text": "Wait for me, I’m going back!",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "Подожди меня, я возвращаюсь!"
         },
         {
           "text": "I won’t move an inch!",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Я не сдвинусь ни на шаг!"
         },
         {
@@ -7726,6 +7747,17 @@
           "kind": "reply",
           "ideal": false,
           "ru": "Хорошо, но поторопись"
+        }
+      ],
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
         }
       ]
     },
@@ -7745,7 +7777,8 @@
           "text": "Requirement: You sent Annie a shirtless photo of you (5.6.3)",
           "notes": [],
           "ideal": false,
-          "ru": "Нужно было отправить Энни фото без рубашки (5.6.3)."
+          "ru": "Этот чат появится, если отправить Энни фото без рубашки (5.6.3).",
+          "en": "You must have sent Annie a shirtless photo (5.6.3)."
         },
         {
           "text": "Did you ask me if you looked stronger... ?",
@@ -7758,7 +7791,7 @@
           "text": "Yes! I took this photo this morning at Luna’s",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Да! Я сделал это фото сегодня утром у Луны."
         },
         {
@@ -7773,7 +7806,8 @@
           "text": "ветка Энни активна\ntrue false",
           "notes": [],
           "ideal": false,
-          "ru": "Дальнейшая переписка зависит от того, активна ли ветка Энни."
+          "ru": "Вторая реплика доступна только при активной ветке Энни.",
+          "en": "The second reply is available only if Annie’s route is active."
         },
         {
           "text": "I mean, YEAH! You look great! Stronger than you were a few months ago! Definitely!",
@@ -7786,7 +7820,7 @@
           "text": "Right? I thought so too. Glad you like it",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Да? Я тоже так подумал. Рад, что тебе понравилось"
         },
         {
@@ -7801,6 +7835,35 @@
           "text": "...",
           "notes": [],
           "ideal": false
+        },
+        {
+          "kind": "note",
+          "text": "The chat continues in 5.9.5.",
+          "ideal": false,
+          "notes": [],
+          "en": "The chat continues in 5.9.5.",
+          "ru": "Переписка продолжается в 5.9.5."
+        }
+      ],
+      "chatNotes": [
+        0
+      ],
+      "chatAfter": [
+        9
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
+        },
+        {
+          "message": 5,
+          "replies": [
+            6
+          ],
+          "note": 4
         }
       ]
     },
@@ -7838,7 +7901,7 @@
           "text": "Wow! I love it",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Ух ты! Мне нравится"
         },
         {
@@ -7853,7 +7916,7 @@
           "notes": [],
           "kind": "dialogue",
           "ideal": false,
-          "ru": "Я позволю им отрасти, пока они не станут таким же длинным, как в Вечности!"
+          "ru": "Буду отращивать их, пока не станут такими же длинными, как в Вечности!"
         },
         {
           "text": "Oh, that’s nice! I’ve gotta go now, but I’ll see you and that new mane of yours later!",
@@ -7880,11 +7943,11 @@
           "text": "Can’t wait to see that! Now I just wish you’d taken that photo vertically...",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Не могу дождаться, чтобы увидеть это! Теперь я просто жалею, что ты не сделала это фото вертикально..."
+          "ideal": true,
+          "ru": "Жду не дождусь! Жалко только, что ты сделала фото горизонтально…"
         },
         {
-          "kind": "note",
+          "kind": "dialogue",
           "text": "... like this?",
           "notes": [],
           "ideal": false,
@@ -7894,13 +7957,14 @@
           "text": "OMG",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "affection": [
             [
               "annie",
               1
             ]
-          ]
+          ],
+          "ru": "ОМГ"
         },
         {
           "text": "Oh, nice! Chang’s gonna love this!",
@@ -7914,9 +7978,40 @@
           "text": "Энни +1",
           "notes": [],
           "ideal": false
+        },
+        {
+          "kind": "note",
+          "text": "Continued from 5.9.4.",
+          "ideal": false,
+          "notes": [],
+          "en": "Continued from 5.9.4.",
+          "ru": "Продолжение переписки из 5.9.4."
         }
       ],
-      "ruTitle": "Энни видит твою фотографию (продолжение)"
+      "ruTitle": "Энни видит твою фотографию (продолжение)",
+      "chatNotes": [
+        14
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            3
+          ]
+        },
+        {
+          "message": 5,
+          "replies": [
+            9
+          ]
+        },
+        {
+          "message": 10,
+          "replies": [
+            11
+          ]
+        }
+      ]
     },
     {
       "id": "5.10",
@@ -8038,20 +8133,21 @@
           "text": "Requirement: ветка Нова активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужна активная ветка Новы."
+          "ru": "Нужна активная ветка Новы.",
+          "en": "Nova’s route must be active."
         },
         {
           "text": "I’ll be waiting for you at the corner of O’connor Bridge",
           "notes": [],
           "kind": "dialogue",
           "ideal": false,
-          "ru": "Я буду ждать вас на углу моста О'Коннор."
+          "ru": "Буду ждать вас у моста О’Коннор."
         },
         {
           "text": "We’re on our way! Can’t wait to see u",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Мы уже в пути! Не могу дождаться встречи с тобой",
           "affection": [
             [
@@ -8072,6 +8168,17 @@
           "text": "Нова +1",
           "notes": [],
           "ideal": false
+        }
+      ],
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
         }
       ]
     },
@@ -10428,7 +10535,7 @@
           "text": "Oh shit, really? I can come anyway and look after you",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Вот черт, правда? Я все равно могу приехать и поухаживать за тобой",
           "affection": [
             [
@@ -10449,6 +10556,15 @@
           "text": "Алекс +1",
           "notes": [],
           "ideal": false
+        }
+      ],
+      "chatNotes": [],
+      "chat": [
+        {
+          "message": 0,
+          "replies": [
+            1
+          ]
         }
       ]
     },
@@ -10536,14 +10652,15 @@
           "text": "Requirement: ветка Пенни активна and ветка Луна активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужны активные ветки Пенни и Луны."
+          "ru": "Нужны активные ветки Пенни и Луны.",
+          "en": "Penny’s and Luna’s routes must both be active."
         },
         {
           "text": "I need you to tell her how beautiful she looks before she takes a shower and loses this style!",
           "notes": [],
           "kind": "dialogue",
           "ideal": false,
-          "ru": "Скажи ей, как красиво она выглядит, пока не сходила в душ и не испортила причёску!"
+          "ru": "Скажи ей, как классно она выглядит, пока она не сходила в душ и не испортила причёску!"
         },
         {
           "text": "Haha come on, stop fooling around",
@@ -10569,7 +10686,7 @@
           "text": "You both look stunning",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Вы обе выглядите потрясающе",
           "affection": [
             [
@@ -10588,6 +10705,17 @@
           "notes": [],
           "ideal": false,
           "ru": "«Вы обе выглядите потрясающе»: Пенни +1 и Луна +1.\n«Она выглядит так красиво»: Луна +1."
+        }
+      ],
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            4
+          ]
         }
       ]
     },
@@ -11560,7 +11688,8 @@
           "text": "Requirement: ветка Пенни активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужна активная ветка Пенни."
+          "ru": "Нужна активная ветка Пенни.",
+          "en": "Penny’s route must be active."
         },
         {
           "text": "I just bought a couple of new things at the mall... for tomorrow’s photoshoot",
@@ -11573,7 +11702,7 @@
           "text": "Oh boy... Can I get a sneak peek... ?",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Ого… А можно взглянуть одним глазком?",
           "affection": [
             [
@@ -11613,8 +11742,25 @@
           "text": "Ah, true! Can’t wait to play with you",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "О, точно! Не могу дождаться, чтобы поиграть с тобой"
+          "ideal": true,
+          "ru": "А, точно! Жду не дождусь, когда поиграем вместе!"
+        }
+      ],
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
+        },
+        {
+          "message": 5,
+          "replies": [
+            7
+          ]
         }
       ]
     },
@@ -12533,7 +12679,8 @@
           "text": "Requirement: ветка Луна активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужна активная ветка Луны."
+          "ru": "Нужна активная ветка Луны.",
+          "en": "Luna’s route must be active."
         },
         {
           "text": "Are you asleep yet?",
@@ -12546,7 +12693,7 @@
           "text": "Without wishing you a good night? No chance",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Не пожелав тебе спокойной ночи? Да ни в жизнь",
           "affection": [
             [
@@ -12569,7 +12716,18 @@
           "ideal": false
         }
       ],
-      "ruTitle": "Луна счастлива"
+      "ruTitle": "Луна счастлива",
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
+        }
+      ]
     },
     {
       "id": "7.9",
@@ -12924,7 +13082,7 @@
           "text": "I wonder why... did something happen yesterday?",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Интересно, почему... что-то случилось вчера?"
         },
         {
@@ -12952,7 +13110,7 @@
           "text": "Yeah... sorry about that, Penny",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Да... прости, Пенни"
         },
         {
@@ -12994,7 +13152,7 @@
           "text": "Not for a moment",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Ни на секунду"
         },
         {
@@ -13009,6 +13167,38 @@
           "text": "......",
           "notes": [],
           "ideal": false
+        },
+        {
+          "kind": "note",
+          "text": "The chat continues in 7.14.2.",
+          "ideal": false,
+          "notes": [],
+          "en": "The chat continues in 7.14.2.",
+          "ru": "Переписка продолжается в 7.14.2."
+        }
+      ],
+      "chatNotes": [],
+      "chatAfter": [
+        14
+      ],
+      "chat": [
+        {
+          "message": 0,
+          "replies": [
+            1
+          ]
+        },
+        {
+          "message": 4,
+          "replies": [
+            5
+          ]
+        },
+        {
+          "message": 8,
+          "replies": [
+            11
+          ]
         }
       ]
     },
@@ -13034,20 +13224,20 @@
           "notes": [],
           "kind": "dialogue",
           "ideal": false,
-          "ru": "Далия взяла на себя миссию превратить нас в самый сильный отряд"
+          "ru": "Далия решила сделать из нас самую спортивную команду на свете."
         },
         {
           "text": "Wow, you got a good angle of Dalia there",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Ух ты, хороший ракурс Далии"
         },
         {
           "text": "Hahah good luck with that!",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Хахах, удачи с этим!"
         },
         {
@@ -13055,7 +13245,7 @@
           "notes": [],
           "kind": "dialogue",
           "ideal": false,
-          "ru": "Удачи в поисках камня, Орион!"
+          "ru": "Удачи в поисках Камня, Орион!"
         },
         {
           "text": "Wow, you got a good angle of Dalia there/again",
@@ -13075,7 +13265,7 @@
           "text": "Wow, you look beautiful",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Вау, ты выглядишь прекрасно",
           "affection": [
             [
@@ -13090,9 +13280,43 @@
           "notes": [],
           "ideal": false,
           "ru": "И как они тебе?..\nПенни +1"
+        },
+        {
+          "kind": "note",
+          "text": "Continued from 7.14.1.",
+          "ideal": false,
+          "notes": [],
+          "en": "Continued from 7.14.1.",
+          "ru": "Продолжение переписки из 7.14.1."
+        },
+        {
+          "kind": "dialogue",
+          "text": "What are your thoughts on them...?",
+          "notes": [],
+          "ideal": false,
+          "ru": "И как они тебе?.."
         }
       ],
-      "ruTitle": "Пенни в спортзале (продолжение)"
+      "ruTitle": "Пенни в спортзале (продолжение)",
+      "chatNotes": [
+        9
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2,
+            3
+          ]
+        },
+        {
+          "message": 4,
+          "replies": [
+            7
+          ],
+          "followup": 10
+        }
+      ]
     },
     {
       "id": "7.15",
@@ -14235,13 +14459,14 @@
           "text": "OMG",
           "notes": [],
           "kind": "dialogue",
-          "ideal": false
+          "ideal": false,
+          "ru": "ОМГ"
         },
         {
           "text": "What happened???",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Что случилось???"
         },
         {
@@ -14269,7 +14494,7 @@
           "text": "No worries!!! There’s no rush",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Не переживай!!! Мы никуда не торопимся",
           "affection": [
             [
@@ -14283,7 +14508,26 @@
           "text": "Энни +1\nYou can answer the following texts in any order. For the ideal route you have to answer all of them. Nova’s chat only shows up when there are no other chats left. Putting your phone away skips to 8.9",
           "notes": [],
           "ideal": false,
-          "ru": "Энни +1\nОтвечай в любом порядке. Для идеального маршрута ответь всем. Нова напишет после того, как ты ответишь остальным. Если уберёшь телефон, перейдёшь к 8.9."
+          "ru": "На чаты можно отвечать в любом порядке. Для идеального маршрута ответь всем. Нова напишет последней. Если убрать телефон, начнётся 8.9.",
+          "en": "You can answer these chats in any order. For the ideal route, reply to everyone. Nova texts last. Putting away the phone skips to 8.9."
+        }
+      ],
+      "chatNotes": [],
+      "chatAfter": [
+        6
+      ],
+      "chat": [
+        {
+          "message": 0,
+          "replies": [
+            1
+          ]
+        },
+        {
+          "message": 3,
+          "replies": [
+            5
+          ]
         }
       ]
     },
@@ -14322,8 +14566,8 @@
           "text": "Lmao sure bro, all yours",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "Лол, конечно, бро, они все в твоем распоряжении",
+          "ideal": true,
+          "ru": "Ахаха, конечно, бро, забирай!",
           "affection": [
             [
               "chang",
@@ -14338,7 +14582,18 @@
           "ideal": false
         }
       ],
-      "ruTitle": "Чанг просит одолжить шутку"
+      "ruTitle": "Чанг просит одолжить шутку",
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            3
+          ]
+        }
+      ]
     },
     {
       "id": "8.8.3",
@@ -14356,7 +14611,8 @@
           "text": "Requirement: ветка Алекс активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужна активная ветка Алекс."
+          "ru": "Нужна активная ветка Алекс.",
+          "en": "Alex’s route must be active."
         },
         {
           "text": "Heyyyy could you bring Dalia’s math notes to the pool tomorrow like around 12?",
@@ -14376,7 +14632,7 @@
           "text": "I’ll be there",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Я принесу"
         },
         {
@@ -14387,7 +14643,21 @@
           "ru": "Позже откроется откровенная сцена с Алекс и возможность получить очки отношений (8.12)."
         }
       ],
-      "ruTitle": "Алекс просит об услуге"
+      "ruTitle": "Алекс просит об услуге",
+      "chatNotes": [
+        0
+      ],
+      "chatAfter": [
+        4
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            3
+          ]
+        }
+      ]
     },
     {
       "id": "8.8.4",
@@ -14404,7 +14674,8 @@
           "text": "Requirement: ветка Нова активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужна активная ветка Новы."
+          "ru": "Нужна активная ветка Новы.",
+          "en": "Nova’s route must be active."
         },
         {
           "text": "Now I’ve got bikini tan lines",
@@ -14417,8 +14688,8 @@
           "text": "Oh no! Can I see?",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "О нет! Могу я увидеть?"
+          "ideal": true,
+          "ru": "О нет! А можно посмотреть?"
         },
         {
           "text": "Oh no! Do you have after-sun?",
@@ -14452,8 +14723,8 @@
           "text": "Oh DAMN Is the front also that bad?",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
-          "ru": "ВОТ ЧЁРТ. А спереди так же?",
+          "ideal": true,
+          "ru": "Вот чёрт! А спереди тоже так сильно?",
           "affection": [
             [
               "nova",
@@ -14480,9 +14751,34 @@
           "text": "Нова +1",
           "notes": [],
           "ideal": false
+        },
+        {
+          "kind": "dialogue",
+          "text": "🙈🙈🙈🙈🙈",
+          "ideal": false,
+          "notes": [],
+          "en": "🙈🙈🙈🙈🙈",
+          "ru": "🙈🙈🙈🙈🙈"
         }
       ],
-      "ruTitle": "Нова жалуется, что обгорела на солнце"
+      "ruTitle": "Нова жалуется, что обгорела на солнце",
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            2
+          ]
+        },
+        {
+          "message": 11,
+          "replies": [
+            7
+          ]
+        }
+      ]
     },
     {
       "id": "8.9",
@@ -14994,7 +15290,7 @@
           "text": "SORRY! I’M ON MY WAY!!!",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "ИЗВИНИ! Я УЖЕ В ПУТИ!!!",
           "affection": [
             [
@@ -15010,7 +15306,16 @@
           "ideal": false
         }
       ],
-      "ruTitle": "Далия теряет терпение"
+      "ruTitle": "Далия теряет терпение",
+      "chatNotes": [],
+      "chat": [
+        {
+          "message": 0,
+          "replies": [
+            2
+          ]
+        }
+      ]
     },
     {
       "id": "8.13",
@@ -17053,7 +17358,8 @@
           "text": "Requirement: ветка Энни активна",
           "notes": [],
           "ideal": false,
-          "ru": "Нужна активная ветка Энни."
+          "ru": "Нужна активная ветка Энни.",
+          "en": "Annie’s route must be active."
         },
         {
           "text": "It’s SNOWING in London",
@@ -17073,7 +17379,7 @@
           "text": "Whoa! So niceee",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Воу! Как круто"
         },
         {
@@ -17093,7 +17399,7 @@
           "text": "The power of love boosted the signal, obviously",
           "notes": [],
           "kind": "reply",
-          "ideal": false,
+          "ideal": true,
           "ru": "Сила любви усилила сигнал, очевидно",
           "affection": [
             [
@@ -17128,6 +17434,23 @@
           "text": "Энни +1",
           "notes": [],
           "ideal": false
+        }
+      ],
+      "chatNotes": [
+        0
+      ],
+      "chat": [
+        {
+          "message": 1,
+          "replies": [
+            3
+          ]
+        },
+        {
+          "message": 4,
+          "replies": [
+            6
+          ]
         }
       ]
     },

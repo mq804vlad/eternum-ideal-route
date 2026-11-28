@@ -98,7 +98,7 @@
   renderWakeLock();
   requestWakeLock();
 
-  const [db, translations] = await Promise.all([loadJson('./guide.json?v=099898186034'), loadJson('./translations.json?v=bb84587f5b57')]);
+  const [db, translations] = await Promise.all([loadJson('./guide.json?v=5b43edd0ac35'), loadJson('./translations.json?v=bb84587f5b57')]);
   const message = text => translations.messages[text]?.[language === 'ru' ? 1 : 0] ?? text;
   const chapterTitle = chapter => t(chapter.title, translations.chapters[chapter.number - 1]);
   const storageKey = 'eternum-route-progress-v1';
@@ -132,7 +132,7 @@
     let updatedKey;
     if (entry?.chat) {
       const turn = entry.chat.findIndex(({replies}) => replies.includes(index));
-      if (turn === -1) return [];
+      if (turn === -1) return isOption(entry.blocks[index]) ? [[key, index]] : [];
       updatedKey = chatChoiceKey(key, turn);
     } else if (entry?.multiple) {
       if (!isOption(entry.blocks[index])) return [];
@@ -213,6 +213,10 @@
     return entry.blocks.map((block, index) => makeBlock(entry, block, index, choiceKeyForOption(entry, index))).join('');
   }
 
+  const scoreName = character => character === 'chang' ? t('Микаэла', 'Michaela') : name(character);
+  const formatPoints = affection => affection.map(([character, delta]) =>
+    `${scoreName(character)} ${delta > 0 ? '+' : '−'}${Math.abs(delta)}`).join(' · ');
+
   function makeBlock(entry, block, index, choiceKey) {
     const blockText = t(block.ru, block.en) || message(block.text);
     const text = linkReferences(blockText).replaceAll('\n', '<br>');
@@ -228,7 +232,7 @@
         const localizedNote = language === 'ru' ? block.ruNotes?.[noteIndex] ?? message(note) : message(note);
         return `<p class="choice-note">${linkReferences(localizedNote).replaceAll('\n', '<br>')}</p>`;
       }).join('')}
-      ${entry.chat && block.affection ? `<p class="choice-note chat-reward">+${block.affection[0][1]}</p>` : ''}
+      ${entry.chat && block.affection ? `<p class="choice-note chat-reward">${esc(formatPoints(block.affection))}</p>` : ''}
       ${selectable && (entry.multiple
         ? `<label class="choice-toggle" for="${checkboxId}"></label>
            <input type="checkbox" class="choice-check" id="${checkboxId}" ${attributes} ${picked ? 'checked' : ''}>`
@@ -242,26 +246,37 @@
     const context = entry.chatContext ? t(...entry.chatContext) : character === 'chang'
       ? ''
       : t(`Чат доступен, если ветка персонажа «${speaker}» активна.`, `This chat is available if ${speaker}’s route is active.`);
-    return (context ? `<div class="route-note">${esc(context)}</div>` : '') + entry.chat.map((step, turn) => {
+    const note = index => makeBlock(entry, entry.blocks[index], index);
+    const before = entry.chatNotes?.map(note).join('') ??
+      (context ? `<div class="route-note">${linkReferences(context)}</div>` : '');
+    const previous = progress.choices[entry.id];
+    const savedReply = isOption(entry.blocks[previous]) ? `<div class="chat-turn" data-saved-chat-reply>
+      <div class="chat-replies"><span class="chat-label">${t('Ранее отмеченный ответ', 'Previously marked reply')}</span>
+        ${makeBlock(entry, entry.blocks[previous], previous, entry.id)}
+      </div>
+    </div>` : '';
+    return before + entry.chat.map((step, turn) => {
       const key = chatChoiceKey(entry.id, turn);
       const label = step.speaker ? t(...step.speaker) : speaker;
+      const incoming = index => `<div class="chat-message"><span class="chat-label">${esc(label)}</span>${makeBlock(entry, entry.blocks[index], index, key)}</div>`;
       const replyLabel = step.replies.length === 1
         ? t('Твой ответ', 'Your reply')
         : t('Твой ответ · любой из вариантов', 'Your reply · pick any option');
       return `<div class="chat-turn">
-        <div class="chat-message"><span class="chat-label">${esc(label)}</span>${makeBlock(entry, entry.blocks[step.message], step.message, key)}</div>
+        ${step.note === undefined ? '' : note(step.note)}
+        ${incoming(step.message)}
         <div class="chat-replies"><span class="chat-label">${replyLabel}</span>
           ${step.replies.map(index => makeBlock(entry, entry.blocks[index], index, key)).join('')}
         </div>
+        ${step.followup === undefined ? '' : incoming(step.followup)}
       </div>`;
-    }).join('');
+    }).join('') + savedReply + (entry.chatAfter?.map(note).join('') ?? '');
   }
 
   function makeScoreChecks(entry) {
     return (entry.scoreChecks || []).map(check => {
       const key = `${entry.id}:${check.id}`;
-      const points = check.affection.map(([character, delta]) =>
-        `${character === 'chang' ? t('Микаэла', 'Michaela') : name(character)} ${delta > 0 ? '+' : '−'}${Math.abs(delta)}`).join(' · ');
+      const points = formatPoints(check.affection);
       return `<label class="score-check">
         <input type="checkbox" data-score-check="${key}" ${progress.scoreChecks[key] ? 'checked' : ''}>
         <span>${esc(t(...check.label))} <strong>${esc(points)}</strong></span>
@@ -397,10 +412,17 @@
       const index = Number(option);
       const wasSelected = progress.choices[id] === index;
       delete progress.choices[id];
+      const entryId = entryIdForChoice(id);
+      const card = choice.closest('.card');
+      const savedReply = card.querySelector('[data-saved-chat-reply]');
+      if (savedReply && (id === entryId || !wasSelected)) {
+        delete progress.choices[entryId];
+        savedReply.remove();
+      }
       if (!wasSelected) progress.choices[id] = index;
-      delete progress.done[entryIdForChoice(id)];
+      delete progress.done[entryId];
       save();
-      for (const button of choice.closest('.card').querySelectorAll('[data-choice]')) refreshChoice(button);
+      for (const button of card.querySelectorAll('[data-choice]')) refreshChoice(button);
       updateProgress();
       return;
     }
